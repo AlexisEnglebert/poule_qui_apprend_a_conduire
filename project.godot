@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[editor_plugins]
+
+enabled=PackedStringArray()
+
 [input]
 
 "Steer Left"={
@@ -62,9 +66,6 @@ Clutch={
 "deadzone": 0.2,
 "events": []
 }
-[editor_plugins]
-
-enabled=PackedStringArray()
 
 [physics]
 
