@@ -22,7 +22,7 @@ metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwjjm"]
 resource_name = "paintRed"
-albedo_color = Color(1, 0.227451, 0.360134, 1)
+albedo_color = Color(0.9647059, 0.58431375, 0.011764706, 1)
 metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq6ih"]
