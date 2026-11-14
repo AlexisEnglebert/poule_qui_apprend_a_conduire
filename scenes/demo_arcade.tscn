@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d2xf4wuh2u4t6"]
 
 [ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://zizi/gevp/scenes/vehicle_controller.tscn" id="1_j427c"]
+[ext_resource type="PackedScene" uid="uid://bgcumhuxh1be1" path="res://scenes/place_parking.tscn" id="1_mgdar"]
 [ext_resource type="PackedScene" uid="uid://fo6kt54q87tf" path="res://scenes/arcade_car.tscn" id="2_dmfpn"]
 [ext_resource type="PackedScene" uid="uid://b2hlchrj4h2b7" path="res://zizi/gevp/scenes/engine_sound.tscn" id="3_7qkkc"]
 [ext_resource type="Script" uid="uid://bq6kx8xl0niko" path="res://scripts/gui.gd" id="4_j2kv5"]
@@ -10,6 +11,9 @@
 [ext_resource type="Script" uid="uid://cewhcqc6b6fwr" path="res://scripts/debug_ui.gd" id="8_gtu87"]
 
 [node name="ArcadeDemo" type="Node3D" unique_id=1115999846]
+
+[node name="PlaceParking" parent="." unique_id=1893917349 instance=ExtResource("1_mgdar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.95442, 0.12519002, -10.085684)
 
 [node name="VehicleController" parent="." unique_id=1596257752 node_paths=PackedStringArray("vehicle_node") instance=ExtResource("1_j427c")]
 vehicle_node = NodePath("VehicleRigidBody")
@@ -64,6 +68,7 @@ script = ExtResource("7_unhf6")
 vehicle = NodePath("../VehicleController/VehicleRigidBody")
 
 [node name="DebugUI" type="Control" parent="Debug" unique_id=1101538260]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

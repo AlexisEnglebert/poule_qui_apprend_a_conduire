@@ -351,6 +351,7 @@ rear_left_wheel = NodePath("WheelRearLeft")
 rear_right_wheel = NodePath("WheelRearRight")
 stability_yaw_ground_multiplier = 6.0
 torque_curve = SubResource("Curve_bt7kc")
+clutch_out_rpm = 1000.0
 variable_torque_split = true
 front_variable_split = 0.5
 center_of_gravity_height_offset = -0.25
@@ -400,7 +401,7 @@ wheel_node = NodePath("RearLeftWheel")
 [node name="RearLeftWheel" type="Node3D" parent="WheelRearLeft" unique_id=1339571968]
 
 [node name="wheel_backLeft" type="MeshInstance3D" parent="WheelRearLeft/RearLeftWheel" unique_id=1087776619]
-transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0)
+transform = Transform3D(-1, 0, 0, 0, 1, -8.742278e-08, 0, 8.742278e-08, 1, 0.2, 0, 0)
 mesh = SubResource("ArrayMesh_0m480")
 
 [node name="WheelRearRight" type="RayCast3D" parent="." unique_id=1432831737 node_paths=PackedStringArray("wheel_node")]
