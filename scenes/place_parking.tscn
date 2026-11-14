@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bgcumhuxh1be1"]
+
+[ext_resource type="Material" uid="uid://d2yiimio70k34" path="res://emission/halo_vert.tres" id="1_wbj5p"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_jtejf"]
+size = Vector3(1.5, 0.05, 3.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jtejf"]
+size = Vector3(2.5, 2, 5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_jtejf"]
+size = Vector2(3.2, 1.5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_f4m2p"]
+size = Vector2(1.5, 1.5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_d0wrn"]
+size = Vector2(1.5, 1.5)
+
+[node name="PlaceParking" type="Area3D" unique_id=1893917349]
+
+[node name="Sol" type="MeshInstance3D" parent="." unique_id=957324550]
+mesh = SubResource("BoxMesh_jtejf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1633564307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_jtejf")
+
+[node name="HaloRoute" type="MeshInstance3D" parent="." unique_id=509653994]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.7, 0.75, 0)
+mesh = SubResource("QuadMesh_jtejf")
+surface_material_override/0 = ExtResource("1_wbj5p")
+
+[node name="HaloAvant" type="MeshInstance3D" parent="." unique_id=97486477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 1.55)
+mesh = SubResource("QuadMesh_f4m2p")
+surface_material_override/0 = ExtResource("1_wbj5p")
+
+[node name="HaloArriere" type="MeshInstance3D" parent="." unique_id=1662623984]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -1.55)
+mesh = SubResource("QuadMesh_d0wrn")
+surface_material_override/0 = ExtResource("1_wbj5p")
