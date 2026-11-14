@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c3ixqkc6k13yi"]
+
+[ext_resource type="Script" uid="uid://bke43uj8dm6sh" path="res://scripts/vehicle_controllergd.gd" id="1_vqaod"]
+
+[node name="VehicleController" type="Node3D" unique_id=924347313]
+script = ExtResource("1_vqaod")
