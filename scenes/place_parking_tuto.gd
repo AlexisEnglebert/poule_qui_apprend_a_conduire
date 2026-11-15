@@ -19,7 +19,8 @@ func _physics_process(delta):
 				current_time_parked += delta
 				if current_time_parked >= time_to_stay:
 					voiture_parked = true
-					print(voiture_parked)
+					get_tree().change_scene_to_file("res://scenes/niveau_3.tscn")
+
 			else:
 				current_time_parked = 0.0
 
