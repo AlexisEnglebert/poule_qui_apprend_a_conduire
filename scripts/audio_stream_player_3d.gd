@@ -20,7 +20,6 @@ func music_load():
 	for fichier in ResourceLoader.list_directory(music_folder):
 		if fichier.ends_with(".ogg") or fichier.ends_with(".mp3") or fichier.ends_with(".wav"):
 			playlist.append(load(music_folder.path_join(fichier)))
-		print("📻 ", playlist.size(), " musiques chargées depuis ", music_folder)
 
 func _unhandled_input(event):
 	if event.is_action_pressed("radio_on_off"):
@@ -42,7 +41,6 @@ func _next_music():
 	if playlist.is_empty():
 		return
 	index = (index + 1) % playlist.size()
-	print("next music")
 	_play_music()
 	
 func _play_music():
@@ -50,7 +48,6 @@ func _play_music():
 			return
 		stream = playlist[index]
 		stream_paused = false
-		print("music played")
 		play()
 		
 	

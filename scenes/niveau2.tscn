@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b52ffwurxlkjs"]
 
 [ext_resource type="PackedScene" uid="uid://b3751e81hqtwx" path="res://routes 2.0/Models/GLB format/sign-highway-wide.glb" id="1_8dnir"]
+[ext_resource type="PackedScene" uid="uid://b5wj2qdjmyj5t" path="res://scenes/enemy.tscn" id="2_ajxw5"]
 [ext_resource type="PackedScene" uid="uid://lxgdwtee6333" path="res://routes 2.0/Models/GLB format/road-straight.glb" id="2_sm8av"]
 [ext_resource type="PackedScene" uid="uid://ch7efvh4bc1j5" path="res://routes 2.0/Models/GLB format/road-slant-curve.glb" id="3_iajut"]
 [ext_resource type="PackedScene" uid="uid://dsq7p602phjn7" path="res://routes 2.0/Models/GLB format/road-crossroad.glb" id="4_sm8av"]
@@ -102,6 +103,9 @@ font_size = 32
 script = ExtResource("22_niv2")
 voiture = NodePath("Voiture")
 
+[node name="enemy" parent="." unique_id=1318172633 instance=ExtResource("2_ajxw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.204567, 1.2882469, 6.8705444)
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1475691854]
 transform = Transform3D(25.24464, 0, 0, 0, 1.9763913, 0, 0, 0, 30.692526, -3.775959, -0.04404848, 1.1330818)
 mesh = SubResource("PlaneMesh_ikeqs")
@@ -168,7 +172,7 @@ transform = Transform3D(3.416055, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, 16.590
 [node name="construction-cone2" parent="." unique_id=6170091 instance=ExtResource("9_ec3qa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0686235, 0, -4.297776)
 
-[node name="construction-cone" parent="construction-cone2" index="0" unique_id=1086562073]
+[node name="construction-cone" parent="construction-cone2" index="0" unique_id=381441739]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, 3.125783, -0.04404848, -3.0632296)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="construction-cone2/construction-cone" index="0" unique_id=325908766]
@@ -179,7 +183,7 @@ shape = SubResource("ConcavePolygonShape3D_t5jlc")
 [node name="construction-cone4" parent="." unique_id=1531164160 instance=ExtResource("9_ec3qa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.568127, 0, -4.297776)
 
-[node name="construction-cone" parent="construction-cone4" index="0" unique_id=1086562073]
+[node name="construction-cone" parent="construction-cone4" index="0" unique_id=381441739]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, 4.5898857, -0.04404848, -3.0632296)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="construction-cone4/construction-cone" index="0" unique_id=576203532]
@@ -190,7 +194,7 @@ shape = SubResource("ConcavePolygonShape3D_le0q6")
 [node name="construction-cone5" parent="." unique_id=285029006 instance=ExtResource("9_ec3qa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.568127, 0, -4.0731525)
 
-[node name="construction-cone" parent="construction-cone5" index="0" unique_id=1086562073]
+[node name="construction-cone" parent="construction-cone5" index="0" unique_id=381441739]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, 4.5898857, -0.04404848, -2.8439093)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="construction-cone5/construction-cone" index="0" unique_id=714241608]
@@ -201,7 +205,7 @@ shape = SubResource("ConcavePolygonShape3D_sqwi0")
 [node name="construction-cone3" parent="." unique_id=1462836081 instance=ExtResource("9_ec3qa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0686235, 0, -3.888174)
 
-[node name="construction-cone" parent="construction-cone3" index="0" unique_id=1086562073]
+[node name="construction-cone" parent="construction-cone3" index="0" unique_id=381441739]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, 3.125783, -0.04404848, -2.6632977)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="construction-cone3/construction-cone" index="0" unique_id=130697207]
@@ -224,7 +228,7 @@ transform = Transform3D(-8.6390806e-08, 0, -1.9763913, 0, 1.9763913, 0, 1.976391
 [node name="road-slant-curve4" parent="." unique_id=709444320 instance=ExtResource("3_iajut")]
 transform = Transform3D(-1.2125093, 0, -8.742278e-08, 0, 1.3023778, 0, 1.06000925e-07, 0, -1, 9.148022, 0, 1.6454191)
 
-[node name="road-slant-curve" parent="road-slant-curve4" index="0" unique_id=978889087]
+[node name="road-slant-curve" parent="road-slant-curve4" index="0" unique_id=2029738936]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 1.4210855e-14, 0, 1.9763913, -4.2524123, -0.033821583, -2.739655)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-slant-curve4/road-slant-curve" index="0" unique_id=174685390]
@@ -235,7 +239,7 @@ shape = SubResource("ConcavePolygonShape3D_nl7f0")
 [node name="road-slant-curve5" parent="." unique_id=1306570775 instance=ExtResource("3_iajut")]
 transform = Transform3D(-6.1476726e-08, 0, -1, 0, 1.3023778, 0, 1.4064236, 0, -4.371139e-08, 4.5629115, 0.8897443, 7.326842)
 
-[node name="road-slant-curve" parent="road-slant-curve5" index="0" unique_id=978889087]
+[node name="road-slant-curve" parent="road-slant-curve5" index="0" unique_id=2029738936]
 transform = Transform3D(1.9763914, 0, -7.1054274e-15, 0, 1.9763914, 0, 0, 0, 1.9763913, 5.8922124, 0.63321877, -0.6792283)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-slant-curve5/road-slant-curve" index="0" unique_id=710104261]
@@ -246,7 +250,7 @@ shape = SubResource("ConcavePolygonShape3D_a83ln")
 [node name="road-slant-curve6" parent="." unique_id=1543699484 instance=ExtResource("3_iajut")]
 transform = Transform3D(-6.1476726e-08, 0, 1, 0, 1.3023778, 0, -1.4064236, 0, -4.371139e-08, 4.563, 0.89, 10.119286)
 
-[node name="road-slant-curve" parent="road-slant-curve6" index="0" unique_id=978889087]
+[node name="road-slant-curve" parent="road-slant-curve6" index="0" unique_id=2029738936]
 transform = Transform3D(1.9763914, 0, 7.1054274e-15, 0, 1.9763914, 0, 0, 0, 1.9763913, -7.830832, 0.63341045, 0.67931414)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-slant-curve6/road-slant-curve" index="0" unique_id=1230536625]
@@ -257,7 +261,7 @@ shape = SubResource("ConcavePolygonShape3D_r3sne")
 [node name="road-straight9" parent="." unique_id=370219300 instance=ExtResource("2_sm8av")]
 transform = Transform3D(1.9883418, 0, 0, 0, 1, 0, 0, 0, 1, 6.9674726, 0.65, 1.639)
 
-[node name="road-straight" parent="road-straight9" index="0" unique_id=222971295]
+[node name="road-straight" parent="road-straight9" index="0" unique_id=1586375208]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, 1.5223844, 0.59060585, 2.7333875)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-straight9/road-straight" index="0" unique_id=1303859433]
@@ -268,7 +272,7 @@ shape = SubResource("ConcavePolygonShape3D_my52b")
 [node name="road-curve4" parent="." unique_id=26359777 instance=ExtResource("5_7unoq")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.0619516, 0.65, 2.1377091)
 
-[node name="road-curve" parent="road-curve4" index="0" unique_id=1204165499]
+[node name="road-curve" parent="road-curve4" index="0" unique_id=878503860]
 transform = Transform3D(1.9763913, 0, 0, 0, 1.9763913, 0, 0, 0, 1.9763913, -3.2203224, 0.59060585, 1.1664867)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-curve4/road-curve" index="0" unique_id=1636697912]
@@ -279,8 +283,8 @@ shape = SubResource("ConcavePolygonShape3D_upr0v")
 [node name="road-straight10" parent="." unique_id=472463289 instance=ExtResource("2_sm8av")]
 transform = Transform3D(-5.4989687e-08, 0, 1, 0, 1, 0, -1.2580174, 0, -4.371139e-08, 4.5604525, 0.65, 3.7575848)
 
-[node name="road-straight" parent="road-straight10" index="0" unique_id=222971295]
-transform = Transform3D(1.9763914, 0, 0, 0, 1.9763913, 0, 7.1054274e-15, 0, 1.9763913, -3.817081, 0.59060585, 0.6768265)
+[node name="road-straight" parent="road-straight10" index="0" unique_id=1586375208]
+transform = Transform3D(1.9763914, 0, 0, 0, 1.9763913, 0, 7.1054274e-15, 0, 1.9763913, -3.7676444, 0.6021534, 0.676826)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-straight10/road-straight" index="0" unique_id=712222315]
 
@@ -290,7 +294,7 @@ shape = SubResource("ConcavePolygonShape3D_f1fbx")
 [node name="road-slant-flat2" parent="." unique_id=912167300 instance=ExtResource("13_asq45")]
 transform = Transform3D(-6.732906e-08, 0, -1, 0, 1, 0, 1.5403094, 0, -4.371139e-08, 4.575221, 0.65, 5.1567335)
 
-[node name="road-slant-flat" parent="road-slant-flat2" index="0" unique_id=1492938550]
+[node name="road-slant-flat" parent="road-slant-flat2" index="0" unique_id=1314336800]
 transform = Transform3D(1.9763913, 0, 3.5527137e-15, 0, 1.9763913, 0, 0, 0, 1.9763913, 4.0044365, 0.59060585, -0.69124746)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-slant-flat2/road-slant-flat" index="0" unique_id=746987992]
@@ -304,7 +308,7 @@ transform = Transform3D(-1.5251985e-07, 0, -1.9763913, 0, 1.9763913, 0, 3.489247
 [node name="road-slant3" parent="." unique_id=1284650168 instance=ExtResource("14_7f8un")]
 transform = Transform3D(-6.8945326e-08, 0, 1, 0, 3.42, 0, -1.577285, 0, -4.371139e-08, 4.5532503, 0, 12.31004)
 
-[node name="road-slant" parent="road-slant3" index="0" unique_id=1426870536]
+[node name="road-slant" parent="road-slant3" index="0" unique_id=576370123]
 transform = Transform3D(1.9763914, 0, 0, 0, 1.9763912, 0, 1.4210855e-14, 0, 1.9763913, -8.3386965, -0.012879672, 0.66979456)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-slant3/road-slant" index="0" unique_id=1768505322]
@@ -315,7 +319,7 @@ shape = SubResource("ConcavePolygonShape3D_i6p2i")
 [node name="road-straight11" parent="." unique_id=1465778812 instance=ExtResource("2_sm8av")]
 transform = Transform3D(-1.213536e-07, 0, 1, 0, 1, 0, -2.7762465, 0, -4.371139e-08, 4.5489874, 0, 14.434682)
 
-[node name="road-straight" parent="road-straight11" index="0" unique_id=222971295]
+[node name="road-straight" parent="road-straight11" index="0" unique_id=1586375208]
 transform = Transform3D(1.9763913, 0, -3.5527137e-15, 0, 1.9763913, 0, -2.842171e-14, 0, 1.9763913, -5.484737, -0.04404848, 0.6656318)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="road-straight11/road-straight" index="0" unique_id=1982140050]
