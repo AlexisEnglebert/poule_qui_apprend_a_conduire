@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bikejajuoqcmk"]
+
+[ext_resource type="Script" uid="uid://bt004dgvqbvm5" path="res://game_over_prefab.gd" id="1_bumvb"]
+[ext_resource type="PackedScene" uid="uid://2dq01a3s7ecg" path="res://scenes/ui_game_over.tscn" id="2_mctj2"]
+
+[node name="game_over_prefab" type="Node3D" unique_id=924257062]
+script = ExtResource("1_bumvb")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1545561155]
+
+[node name="ui_game_over" parent="CanvasLayer" unique_id=646976317 instance=ExtResource("2_mctj2")]

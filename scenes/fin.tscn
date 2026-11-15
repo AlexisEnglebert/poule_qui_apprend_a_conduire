@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dhgi21fws1h0t"]
+
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="1_5royu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_loyww"]
+font = ExtResource("1_5royu")
+font_size = 100
+font_color = Color(1, 0, 0, 1)
+
+[node name="fin" type="Node2D" unique_id=837401268]
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=30964367]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 647.0
+offset_top = 457.0
+offset_right = 1352.0
+offset_bottom = 565.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=582625070]
+layout_mode = 2
+text = "BRAVOOOO !!!!! (FIN)"
+label_settings = SubResource("LabelSettings_loyww")

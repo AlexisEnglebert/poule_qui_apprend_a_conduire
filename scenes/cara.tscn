@@ -15,7 +15,7 @@ metadata/_edit_group_ = true
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 metadata/_edit_group_ = true
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1122547554]
+[node name="cara2" type="CollisionShape3D" parent="." unique_id=1122547554]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04248047, 0.19741821, -0.09382427)
 shape = SubResource("BoxShape3D_jtejf")
 metadata/_edit_group_ = true

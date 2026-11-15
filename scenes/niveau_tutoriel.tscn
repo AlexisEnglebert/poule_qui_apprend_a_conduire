@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://fje7v82eye5h" path="res://Skybox/skybox-day.png" id="1_du857"]
 [ext_resource type="PackedScene" uid="uid://bvfq4ipy1jqk1" path="res://scenes/voiture.tscn" id="2_kpl3k"]
 [ext_resource type="Script" uid="uid://clud4r8ohxp5e" path="res://scenes/voiture_hint_detection.gd" id="3_3y6d6"]
+[ext_resource type="CompositorEffect" uid="uid://26l402kf6406" path="res://scenes/effet_ivresse.tres" id="3_b0kk6"]
 [ext_resource type="PackedScene" uid="uid://cnxyp5opth3qb" path="res://scenes/voiture_garee.tscn" id="3_kpl3k"]
 [ext_resource type="PackedScene" uid="uid://bgcumhuxh1be1" path="res://scenes/place_parking.tscn" id="4_kpl3k"]
 [ext_resource type="PackedScene" uid="uid://cblpy2xms8ejf" path="res://scenes/menu_déplacement.tscn" id="5_a2y0p"]
@@ -29,6 +30,9 @@ ssao_enabled = true
 ssao_intensity = 2.05
 ssil_enabled = true
 fog_light_color = Color(0.30755928, 0.59975535, 0.65797806, 1)
+
+[sub_resource type="Compositor" id="Compositor_ajxw5"]
+compositor_effects = Array[CompositorEffect]([ExtResource("3_b0kk6")])
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0l4sy"]
 albedo_color = Color(0.18521258, 0.14985743, 0.14112079, 1)
@@ -77,6 +81,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7715888, 0.25, -4.391867)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2046021726]
 environment = SubResource("Environment_nr1ri")
+compositor = SubResource("Compositor_ajxw5")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1146382300]
 transform = Transform3D(-0.17253792, -0.8742413, -0.45379847, 0.6392615, -0.44988775, 0.6236553, -0.7493838, -0.18249175, 0.63649136, -0.8851303, 3.2866697, -0.37521127)
@@ -422,3 +427,6 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -18.650976, 0.18556213, -1
 
 [node name="tree-large49" parent="." unique_id=194655764 instance=ExtResource("7_0bulu")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -18.650976, 0.18556213, -18.686943)
+
+[node name="cara2" parent="." unique_id=2032745859 instance=ExtResource("1_0e7hm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1164639, 0.47014678, -5.1526213)

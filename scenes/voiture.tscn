@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://jl3wwbkcebwi" path="res://scripts/audio_stream_player_3d.gd" id="6_ftvy3"]
 
 [node name="Voiture" type="Node3D" unique_id=1115999846]
+metadata/voiture = true
 
 [node name="VehicleController" parent="." unique_id=1596257752 node_paths=PackedStringArray("vehicle_node") instance=ExtResource("2_fdm5x")]
 vehicle_node = NodePath("VehicleRigidBody")

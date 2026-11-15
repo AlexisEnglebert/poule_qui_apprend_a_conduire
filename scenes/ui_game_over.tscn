@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://2dq01a3s7ecg"]
+
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="1_wufpx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_loyww"]
+font = ExtResource("1_wufpx")
+font_size = 100
+font_color = Color(1, 0.22000003, 0.22000003, 1)
+
+[node name="ui_game_over" type="Control" unique_id=646976317]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1804578818]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=313965757]
+layout_mode = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_loyww")

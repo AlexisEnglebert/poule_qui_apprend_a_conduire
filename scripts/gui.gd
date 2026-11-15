@@ -36,14 +36,23 @@ func _physics_process(delta):
 	old_speed = vehicle.linear_velocity
 
 func _on_collision(object):	
-	if invincible > 0.0 or _est_route(object):
+	if health <= 0.0 or invincible > 0.0 or _est_route(object):
 		return
 	print("collision")
 	var crash = (old_speed - vehicle.linear_velocity).length()
 	health -= crash * damage_multiplicator
 	health = snapped(health, 0.1)
 	if health <= 0.0:
-		print("plus de vie")
+		_game_over()
+
+func plus_de_vie():
+	if health <= 0.0:
+		return
+	health = 0.0
+	_game_over()
+
+func _game_over():
+	get_tree().current_scene.add_child(preload("res://scenes/game_over_prefab.tscn").instantiate())
 
 func _est_route(object: Node) -> bool:
 	var n := object

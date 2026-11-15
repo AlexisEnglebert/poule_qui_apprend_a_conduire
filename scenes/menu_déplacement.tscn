@@ -15,10 +15,10 @@ font_size = 30
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1321617716]
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 487.0
+offset_left = 834.0
 offset_top = 10.0
-offset_right = 706.0
-offset_bottom = 54.0
+offset_right = 1193.0
+offset_bottom = 79.0
 grow_horizontal = 2
 
 [node name="fleches" type="Node2D" parent="CenterContainer" unique_id=1466714990]

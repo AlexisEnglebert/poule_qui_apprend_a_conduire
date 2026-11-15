@@ -19,5 +19,7 @@ grow_horizontal = 2
 
 [node name="LabelTimer" type="Label" parent="CanvasLayer/CenterContainer" unique_id=1824623796]
 layout_mode = 2
-text = "Vite, vous devez arriver au parking avant la fin du timer !"
+text = "Vite, vous devez arriver au parking avant la fin du timer !
+Vous ne pouvez pas toucher l'herbre !"
 label_settings = SubResource("LabelSettings_p4lah")
+horizontal_alignment = 1

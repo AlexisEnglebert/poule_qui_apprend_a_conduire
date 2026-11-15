@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://fo6kt54q87tf"]
 
 [ext_resource type="Script" uid="uid://cjka2nxlkoh6q" path="res://scripts/vehicle.gd" id="1_wr17c"]
+[ext_resource type="PackedScene" uid="uid://c3ex44c8khsij" path="res://Chicken by jeremy - 1YE8U35HXsI.glb" id="2_3yd6w"]
 [ext_resource type="Script" uid="uid://btqy4bt0dk3se" path="res://scripts/wheel.gd" id="2_67xbp"]
 [ext_resource type="PackedScene" uid="uid://dvao3wdofaxh6" path="res://scenes/gui.tscn" id="3_7dlhd"]
 
@@ -359,6 +360,9 @@ center_of_gravity_height_offset = -0.25
 front_damping_ratio = 0.6
 rear_damping_ratio = 0.6
 braking_grip_multiplier = 2.0
+
+[node name="Chicken by jeremy - 1YE8U35HXsI" parent="." unique_id=423818696 instance=ExtResource("2_3yd6w")]
+transform = Transform3D(-2.1855694e-10, 0, -0.005, 0, 0.005, 0, 0.005, 0, -2.1855694e-10, 0.055464923, 1.0992601, 0.16315755)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1542047561]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4545e-14, 0.2, 0)

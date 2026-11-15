@@ -1,0 +1,12 @@
+[gd_resource type="CompositorEffect" script_class="EffetIvresse" format=3 uid="uid://26l402kf6406"]
+
+[ext_resource type="Script" uid="uid://grs5jfavfw0o" path="res://effects/effet_ivresse.gd" id="1_endvj"]
+
+[resource]
+resource_local_to_scene = false
+resource_name = ""
+enabled = false
+effect_callback_type = 4
+needs_motion_vectors = false
+needs_normal_roughness = false
+script = ExtResource("1_endvj")
