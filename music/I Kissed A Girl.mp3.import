@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://15v3h7m1wv16"
+path="res://.godot/imported/I Kissed A Girl.mp3-d1c6a5208e8eb4096511441ea598fc65.mp3str"
+
+[deps]
+
+source_file="res://music/I Kissed A Girl.mp3"
+dest_files=["res://.godot/imported/I Kissed A Girl.mp3-d1c6a5208e8eb4096511441ea598fc65.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
