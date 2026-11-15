@@ -35,14 +35,22 @@ func _physics_process(delta):
 		invincible -= delta
 	old_speed = vehicle.linear_velocity
 
-func _on_collision(object):
-	print("collision")
-	if invincible > 0.0:
+func _on_collision(object):	
+	if invincible > 0.0 or _est_route(object):
 		return
+	print("collision")
 	var crash = (old_speed - vehicle.linear_velocity).length()
 	health -= crash * damage_multiplicator
 	health = snapped(health, 0.1)
 	if health <= 0.0:
 		print("plus de vie")
+
+func _est_route(object: Node) -> bool:
+	var n := object
+	while n:
+		if n.name.begins_with("road"):
+			return true
+		n = n.get_parent()
+	return false
 	 
 	

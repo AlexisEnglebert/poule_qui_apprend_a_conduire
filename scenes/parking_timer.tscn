@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dm1hq80qtcww2"]
+
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="1_26bo6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p4lah"]
+font = ExtResource("1_26bo6")
+font_size = 30
+
+[node name="Node2D" type="Node2D" unique_id=203824709]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=359699954]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=224702732]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 20.0
+offset_bottom = 43.0
+grow_horizontal = 2
+
+[node name="LabelTimer" type="Label" parent="CanvasLayer/CenterContainer" unique_id=1824623796]
+layout_mode = 2
+text = "Vite, vous devez arriver au parking avant la fin du timer !"
+label_settings = SubResource("LabelSettings_p4lah")
