@@ -10,7 +10,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	rotate_y(0.2 * delta)
+	rotate_y(5.0 * delta)
 	
 func _on_collision(body):
 	if already_taken:
