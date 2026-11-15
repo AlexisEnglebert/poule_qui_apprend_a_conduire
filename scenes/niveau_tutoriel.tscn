@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bw3rxl58faxi2"]
 
+[ext_resource type="PackedScene" uid="uid://b3hn0ldh6jvvh" path="res://scenes/cara.tscn" id="1_0e7hm"]
 [ext_resource type="Texture2D" uid="uid://fje7v82eye5h" path="res://Skybox/skybox-day.png" id="1_du857"]
 [ext_resource type="PackedScene" uid="uid://bvfq4ipy1jqk1" path="res://scenes/voiture.tscn" id="2_kpl3k"]
 [ext_resource type="Script" uid="uid://clud4r8ohxp5e" path="res://scenes/voiture_hint_detection.gd" id="3_3y6d6"]
@@ -70,6 +71,9 @@ material = SubResource("StandardMaterial3D_yacx3")
 size = Vector3(40.069748, 1, 17.24707)
 
 [node name="niveau_tutoriel" type="Node3D" unique_id=261517795]
+
+[node name="cara" parent="." unique_id=2051445206 instance=ExtResource("1_0e7hm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7715888, 0.25, -4.391867)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2046021726]
 environment = SubResource("Environment_nr1ri")
