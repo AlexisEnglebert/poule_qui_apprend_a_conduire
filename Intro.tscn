@@ -23,11 +23,16 @@ sky_material = SubResource("PanoramaSkyMaterial_0l4sy")
 [sub_resource type="Environment" id="Environment_loyww"]
 background_mode = 2
 sky = SubResource("Sky_t8f6l")
+reflected_light_source = 2
+ssao_enabled = true
+ssao_intensity = 2.05
+ssil_enabled = true
+fog_light_color = Color(0.30755928, 0.59975535, 0.65797806, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_t8f6l"]
 render_priority = 0
 shader = ExtResource("2_sb8jg")
-shader_parameter/color = Vector4(0.45, 0.5, 0, 0.18)
+shader_parameter/color = Vector4(0.45, 0.7, 0, 0.18)
 shader_parameter/tex = ExtResource("3_vltdc")
 shader_parameter/height_range = 0.13
 
@@ -36,12 +41,14 @@ material = SubResource("ShaderMaterial_t8f6l")
 subdivide_width = 10
 subdivide_depth = 10
 
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_lrr77"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0l4sy"]
 render_priority = 0
 shader = ExtResource("2_sb8jg")
 shader_parameter/color = Vector4(0.45, 0.82, 0, 0)
-shader_parameter/tex = ExtResource("3_vltdc")
-shader_parameter/height_range = 1.0
+shader_parameter/tex = SubResource("NoiseTexture2D_lrr77")
+shader_parameter/height_range = 1.08
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_t8f6l"]
 material = SubResource("ShaderMaterial_0l4sy")
@@ -77,13 +84,13 @@ transform = Transform3D(1, 0, 0, 0, 0.97202486, 0.23487805, 0, -0.23487805, 0.97
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1492267712]
 transform = Transform3D(0.69937897, 0.37578684, -0.60799134, -0.71293706, 0.42733723, -0.5559708, 0.050890833, 0.8222939, 0.566783, 0, 4.2438097, 0)
-light_color = Color(0.8161973, 0.805399, 0.5307721, 1)
-light_energy = 0.596
-light_indirect_energy = 0.689
+light_color = Color(1, 0.9411765, 0.83137256, 1)
+light_energy = 0.669
 light_specular = 0.0
 shadow_enabled = true
 shadow_bias = 0.287
 shadow_blur = 0.562
+sky_mode = 1
 
 [node name="fence2" parent="." unique_id=1746587407 instance=ExtResource("4_6omm5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.824972, 0.67606604, 2.1514146)
@@ -144,4 +151,4 @@ transform = Transform3D(0.011463693, -0.029230958, 0.051128615, 0.054421473, -0.
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1347328030]
 
 [node name="scene_principale" parent="CanvasLayer" unique_id=663831369 instance=ExtResource("13_465o5")]
-position = Vector2(0, 2)
+position = Vector2(77, 115)

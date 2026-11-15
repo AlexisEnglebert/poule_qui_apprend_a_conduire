@@ -11,7 +11,7 @@ void vertex() {
 
 void fragment() {
 	// Called for every pixel the material is visible on.
-	NORMAL = vec3(5, 1, 1) * normalize(cross(dFdx(VERTEX), dFdy(VERTEX)));
+	NORMAL = normalize(cross(dFdx(VERTEX), dFdy(VERTEX)));
 	// green color
 	vec3 material_color = color.rgb;
 	ALBEDO = material_color;

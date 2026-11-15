@@ -1,6 +1,30 @@
 [gd_scene format=3 uid="uid://csf8km0s6elbj"]
 
+[ext_resource type="Script" uid="uid://blhdhbl5pmhrv" path="res://scripts/main_menu.gd" id="1_bj1uy"]
+
+[sub_resource type="FontFile" id="FontFile_x7udj"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+
 [sub_resource type="LabelSettings" id="LabelSettings_loyww"]
+font = SubResource("FontFile_x7udj")
 font_size = 50
 
 [node name="scene_principale" type="Node2D" unique_id=663831369]
@@ -31,3 +55,6 @@ layout_mode = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Jouer"
+script = ExtResource("1_bj1uy")
+
+[connection signal="pressed" from="root2D/CenterContainer/VBoxContainer/Button" to="root2D/CenterContainer/VBoxContainer/Button" method="_on_pressed"]
