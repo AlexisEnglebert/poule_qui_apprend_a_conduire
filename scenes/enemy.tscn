@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b5wj2qdjmyj5t"]
+
+[ext_resource type="PackedScene" uid="uid://c3ex44c8khsij" path="res://Chicken by jeremy - 1YE8U35HXsI.glb" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://cbll4qy2034ar" path="res://scripts/enemy.gd" id="1_md0e3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_md0e3"]
+size = Vector3(0.32366943, 0.38223267, 0.23168945)
+
+[node name="enemy" type="AnimatableBody3D" unique_id=1318172633]
+script = ExtResource("1_md0e3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=780138036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010955811, 0.20954895, -0.0030517578)
+shape = SubResource("BoxShape3D_md0e3")
+
+[node name="end" type="Marker3D" parent="." unique_id=785184368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="Chicken by jeremy - 1YE8U35HXsI" parent="." unique_id=140024117 instance=ExtResource("1_7p1mj")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)

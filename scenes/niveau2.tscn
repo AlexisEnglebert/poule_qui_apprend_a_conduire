@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b52ffwurxlkjs"]
 
 [ext_resource type="PackedScene" uid="uid://b3751e81hqtwx" path="res://routes 2.0/Models/GLB format/sign-highway-wide.glb" id="1_8dnir"]
+[ext_resource type="PackedScene" uid="uid://b5wj2qdjmyj5t" path="res://scenes/enemy.tscn" id="2_ajxw5"]
 [ext_resource type="PackedScene" uid="uid://lxgdwtee6333" path="res://routes 2.0/Models/GLB format/road-straight.glb" id="2_sm8av"]
 [ext_resource type="PackedScene" uid="uid://ch7efvh4bc1j5" path="res://routes 2.0/Models/GLB format/road-slant-curve.glb" id="3_iajut"]
 [ext_resource type="PackedScene" uid="uid://dsq7p602phjn7" path="res://routes 2.0/Models/GLB format/road-crossroad.glb" id="4_sm8av"]
@@ -109,6 +110,9 @@ font_size = 32
 script = ExtResource("22_niv2")
 voiture = NodePath("Voiture")
 canvas_layer = NodePath("CanvasLayer3/fin")
+
+[node name="enemy" parent="." unique_id=1318172633 instance=ExtResource("2_ajxw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.204567, 1.2882469, 6.8705444)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1475691854]
 transform = Transform3D(146.48543, 0, 0, 0, 11.468276, 0, 0, 0, 178.0975, -39.25386, -0.46956557, 11.533712)
