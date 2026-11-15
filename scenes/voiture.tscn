@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c3ixqkc6k13yi" path="res://zizi/gevp/scenes/vehicle_controller.tscn" id="2_fdm5x"]
 [ext_resource type="PackedScene" uid="uid://fo6kt54q87tf" path="res://scenes/arcade_car.tscn" id="3_h0ge8"]
 [ext_resource type="PackedScene" uid="uid://b2hlchrj4h2b7" path="res://zizi/gevp/scenes/engine_sound.tscn" id="4_mssu5"]
+[ext_resource type="PackedScene" uid="uid://dvao3wdofaxh6" path="res://scenes/gui.tscn" id="5_lwyw3"]
 [ext_resource type="Script" uid="uid://c0osqcm5k63ow" path="res://scripts/camera.gd" id="5_vy00d"]
 
 [node name="Voiture" type="Node3D" unique_id=1115999846]
@@ -10,7 +11,7 @@
 [node name="VehicleController" parent="." unique_id=1596257752 node_paths=PackedStringArray("vehicle_node") instance=ExtResource("2_fdm5x")]
 vehicle_node = NodePath("VehicleRigidBody")
 
-[node name="VehicleRigidBody" parent="VehicleController" unique_id=1682125265 instance=ExtResource("3_h0ge8")]
+[node name="VehicleRigidBody" parent="VehicleController" unique_id=1682125265 groups=["player"] instance=ExtResource("3_h0ge8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.926611, 0)
 center_of_mass_mode = 1
 linear_damp_mode = 1
@@ -25,3 +26,5 @@ transform = Transform3D(1, 0, 0, 0, 0.989776, 0.142629, 0, -0.142629, 0.989776, 
 script = ExtResource("5_vy00d")
 follow_distance = 3
 follow_this = NodePath("../VehicleController/VehicleRigidBody")
+
+[node name="GUI" parent="." unique_id=1346108716 instance=ExtResource("5_lwyw3")]
