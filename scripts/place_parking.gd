@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var time_to_stay := 1.5
+@export var time_to_stay := 3
 
 var voiture_parked := false
 var current_time_parked := 0.0
