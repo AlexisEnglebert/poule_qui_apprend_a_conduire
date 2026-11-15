@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b1g3veygmm1ex"
+path="res://.godot/imported/cabin-roof-snow-corner.obj-bb76cffefe12db3856f0313b20385897.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-roof-snow-corner.obj-bb76cffefe12db3856f0313b20385897.mesh"]
+
+source_file="res://neige /Models/OBJ format/cabin-roof-snow-corner.obj"
+dest_files=["res://.godot/imported/cabin-roof-snow-corner.obj-bb76cffefe12db3856f0313b20385897.mesh", "res://.godot/imported/cabin-roof-snow-corner.obj-bb76cffefe12db3856f0313b20385897.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

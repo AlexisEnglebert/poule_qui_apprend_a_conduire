@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hh1tfsh0rhn8"
+path="res://.godot/imported/cabin-roof-point.obj-0517fae325431887c6f8bdc820c874fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-roof-point.obj-0517fae325431887c6f8bdc820c874fe.mesh"]
+
+source_file="res://neige /Models/OBJ format/cabin-roof-point.obj"
+dest_files=["res://.godot/imported/cabin-roof-point.obj-0517fae325431887c6f8bdc820c874fe.mesh", "res://.godot/imported/cabin-roof-point.obj-0517fae325431887c6f8bdc820c874fe.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

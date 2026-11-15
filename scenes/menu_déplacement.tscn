@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cblpy2xms8ejf"]
+
+[ext_resource type="Texture2D" uid="uid://bvjckygnk0sir" path="res://ui/ui-input/Keyboard & Mouse/Default/keyboard_arrow_down.png" id="1_hldgx"]
+[ext_resource type="Texture2D" uid="uid://b25p0sik6urm6" path="res://ui/ui-input/Keyboard & Mouse/Default/keyboard_arrow_left.png" id="2_j8wkc"]
+[ext_resource type="Texture2D" uid="uid://ok5gy4dje027" path="res://ui/ui-input/Keyboard & Mouse/Default/keyboard_arrow_right.png" id="3_1v58v"]
+[ext_resource type="Texture2D" uid="uid://cdb8vdm62ohvd" path="res://ui/ui-input/Keyboard & Mouse/Default/keyboard_arrow_up.png" id="4_pf6s4"]
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="5_j8wkc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_loyww"]
+font = ExtResource("5_j8wkc")
+font_size = 30
+
+[node name="menu_déplacement" type="Node2D" unique_id=1911763376]
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1321617716]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 487.0
+offset_top = 10.0
+offset_right = 706.0
+offset_bottom = 54.0
+grow_horizontal = 2
+
+[node name="fleches" type="Node2D" parent="CenterContainer" unique_id=1466714990]
+position = Vector2(-482, -4)
+
+[node name="KeyboardArrowDown" type="Sprite2D" parent="CenterContainer/fleches" unique_id=1502430887]
+position = Vector2(656, 166)
+texture = ExtResource("1_hldgx")
+
+[node name="KeyboardArrowLeft" type="Sprite2D" parent="CenterContainer/fleches" unique_id=1921481146]
+position = Vector2(605, 166)
+texture = ExtResource("2_j8wkc")
+
+[node name="KeyboardArrowRight" type="Sprite2D" parent="CenterContainer/fleches" unique_id=2035344051]
+position = Vector2(707, 166)
+texture = ExtResource("3_1v58v")
+
+[node name="KeyboardArrowUp" type="Sprite2D" parent="CenterContainer/fleches" unique_id=1663026029]
+position = Vector2(656, 115)
+texture = ExtResource("4_pf6s4")
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=1845175339]
+layout_mode = 2
+text = "Utilisez les flèches directionelles
+pour vous déplacer"
+label_settings = SubResource("LabelSettings_loyww")
+horizontal_alignment = 1
+vertical_alignment = 1

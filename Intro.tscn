@@ -71,7 +71,7 @@ buffer = PackedFloat32Array(0.88544565, 0, -0.4668909, 2.677569, 0, 1.0010002, 0
 [node name="root" type="Node3D" unique_id=401097549]
 
 [node name="cara2" parent="." unique_id=476602879 instance=ExtResource("1_33olo")]
-transform = Transform3D(0.0067646187, -0.049612906, -0.033057522, 0.058587287, -0.00062591303, 0.012928182, -0.011034927, -0.033736747, 0.048374195, 9.876124, 1.2221477, 2.6647725)
+transform = Transform3D(0.0067646187, -0.049612906, -0.033057522, 0.058587287, -0.00062591303, 0.012928182, -0.011034927, -0.033736747, 0.048374195, 9.862488, 1.3156257, 2.6830928)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1519161289]
 environment = SubResource("Environment_loyww")

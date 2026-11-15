@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://5lk6x0m88ry5"]
+
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="5_pbcxj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_y7t1x"]
+font = ExtResource("5_pbcxj")
+font_size = 30
+
+[node name="ui_parking" type="Node2D" unique_id=1933382417]
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1939388051]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 487.0
+offset_top = 10.0
+offset_right = 706.0
+offset_bottom = 54.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=1132201188]
+layout_mode = 2
+text = "Dirigez vous vers la place de parking
+Vous devez rester 1s dessus !"
+label_settings = SubResource("LabelSettings_y7t1x")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbdxoy6tx6xft"
+path="res://.godot/imported/sock-green-cane.obj-e47a42a1d807b0a4651bf1e1bf8bd5de.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sock-green-cane.obj-e47a42a1d807b0a4651bf1e1bf8bd5de.mesh"]
+
+source_file="res://neige /Models/OBJ format/sock-green-cane.obj"
+dest_files=["res://.godot/imported/sock-green-cane.obj-e47a42a1d807b0a4651bf1e1bf8bd5de.mesh", "res://.godot/imported/sock-green-cane.obj-e47a42a1d807b0a4651bf1e1bf8bd5de.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

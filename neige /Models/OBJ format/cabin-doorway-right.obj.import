@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c62lqcxqwbov0"
+path="res://.godot/imported/cabin-doorway-right.obj-ee3af63e1ec156198a8ff822f958117b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabin-doorway-right.obj-ee3af63e1ec156198a8ff822f958117b.mesh"]
+
+source_file="res://neige /Models/OBJ format/cabin-doorway-right.obj"
+dest_files=["res://.godot/imported/cabin-doorway-right.obj-ee3af63e1ec156198a8ff822f958117b.mesh", "res://.godot/imported/cabin-doorway-right.obj-ee3af63e1ec156198a8ff822f958117b.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,31 +1,56 @@
 [gd_scene format=3 uid="uid://csf8km0s6elbj"]
 
 [ext_resource type="Script" uid="uid://blhdhbl5pmhrv" path="res://scripts/main_menu.gd" id="1_bj1uy"]
-
-[sub_resource type="FontFile" id="FontFile_x7udj"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/50/0/ascent = 0.0
-cache/0/50/0/descent = 0.0
-cache/0/50/0/underline_position = 0.0
-cache/0/50/0/underline_thickness = 0.0
-cache/0/50/0/scale = 1.0
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="1_gmcsc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_loyww"]
-font = SubResource("FontFile_x7udj")
+font = ExtResource("1_gmcsc")
 font_size = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmcsc"]
+bg_color = Color(0.1675547, 0.66555494, 0.77551246, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ul6ys"]
+bg_color = Color(0.21877727, 0.7442021, 0.8629169, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ns3he"]
+bg_color = Color(0.373316, 0.840831, 0.9550367, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 10.0
+expand_margin_top = 5.0
+expand_margin_right = 10.0
+expand_margin_bottom = 5.0
 
 [node name="scene_principale" type="Node2D" unique_id=663831369]
 
@@ -53,7 +78,11 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="root2D/CenterContainer/VBoxContainer" unique_id=732262056]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gmcsc")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_gmcsc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ul6ys")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ns3he")
 text = "Jouer"
 script = ExtResource("1_bj1uy")
 
