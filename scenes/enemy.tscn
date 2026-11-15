@@ -14,7 +14,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010955811, 0.20954895, -0.
 shape = SubResource("BoxShape3D_md0e3")
 
 [node name="end" type="Marker3D" parent="." unique_id=785184368]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.851311, 0, 0)
 
 [node name="Chicken by jeremy - 1YE8U35HXsI" parent="." unique_id=140024117 instance=ExtResource("1_7p1mj")]
 transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
