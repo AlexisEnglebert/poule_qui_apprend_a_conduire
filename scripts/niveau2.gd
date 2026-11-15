@@ -37,7 +37,7 @@ func _ready() -> void:
 				c.add_to_group("herbe")
 				c.global_position.y -= 0.05
 	
-	await get_tree().create_timer(2).timeout
+	await get_tree().create_timer(5).timeout
 	texteScript.hide()
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start(10)

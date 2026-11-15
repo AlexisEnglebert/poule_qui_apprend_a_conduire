@@ -6,6 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://dvao3wdofaxh6" path="res://scenes/gui.tscn" id="5_lwyw3"]
 [ext_resource type="Script" uid="uid://c0osqcm5k63ow" path="res://scripts/camera.gd" id="5_vy00d"]
 [ext_resource type="Script" uid="uid://jl3wwbkcebwi" path="res://scripts/audio_stream_player_3d.gd" id="6_ftvy3"]
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="7_8efge"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_loyww"]
+font = ExtResource("7_8efge")
+font_size = 30
 
 [node name="Voiture" type="Node3D" unique_id=1115999846]
 metadata/voiture = true
@@ -33,4 +38,22 @@ follow_this = NodePath("../VehicleController/VehicleRigidBody")
 
 [node name="radio" type="AudioStreamPlayer3D" parent="." unique_id=562025221]
 script = ExtResource("6_ftvy3")
-playlist = null
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1970244438]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=261884192]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer" unique_id=1633066852]
+layout_mode = 2
+text = "appuyez sur A pour activer / désactiver la radio
+Apuyez sur Z pour passer une musique"
+label_settings = SubResource("LabelSettings_loyww")

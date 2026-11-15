@@ -1,6 +1,23 @@
 [gd_scene format=3 uid="uid://dvao3wdofaxh6"]
 
 [ext_resource type="Script" uid="uid://bq6kx8xl0niko" path="res://scripts/gui.gd" id="1_efmwq"]
+[ext_resource type="FontFile" uid="uid://cjcy6ugy2fvca" path="res://fonts/bangers/Bangers.ttf" id="2_mfius"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p2yq0"]
+font = ExtResource("2_mfius")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_720d7"]
+font = ExtResource("2_mfius")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_f5nrq"]
+font = ExtResource("2_mfius")
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_wufpx"]
+font = ExtResource("2_mfius")
+font_size = 32
 
 [node name="GUI" type="Control" unique_id=1346108716]
 layout_mode = 3
@@ -10,6 +27,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_efmwq")
+metadata/_edit_horizontal_guides_ = [7.0]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=586712260]
 layout_mode = 1
@@ -21,12 +39,16 @@ grow_vertical = 2
 
 [node name="Speed" type="Label" parent="VBoxContainer" unique_id=107526466]
 layout_mode = 2
+label_settings = SubResource("LabelSettings_p2yq0")
 
 [node name="RPM" type="Label" parent="VBoxContainer" unique_id=1554531973]
 layout_mode = 2
+label_settings = SubResource("LabelSettings_720d7")
 
 [node name="Gear" type="Label" parent="VBoxContainer" unique_id=1019684834]
 layout_mode = 2
+label_settings = SubResource("LabelSettings_f5nrq")
 
 [node name="Health" type="Label" parent="VBoxContainer" unique_id=717845407]
 layout_mode = 2
+label_settings = SubResource("LabelSettings_wufpx")
