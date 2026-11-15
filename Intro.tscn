@@ -17,12 +17,13 @@
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_0l4sy"]
 panorama = ExtResource("1_gjrx4")
 
-[sub_resource type="Sky" id="Sky_t8f6l"]
+[sub_resource type="Sky" id="Sky_465o5"]
 sky_material = SubResource("PanoramaSkyMaterial_0l4sy")
 
 [sub_resource type="Environment" id="Environment_loyww"]
 background_mode = 2
-sky = SubResource("Sky_t8f6l")
+sky = SubResource("Sky_465o5")
+ambient_light_source = 3
 reflected_light_source = 2
 ssao_enabled = true
 ssao_intensity = 2.05

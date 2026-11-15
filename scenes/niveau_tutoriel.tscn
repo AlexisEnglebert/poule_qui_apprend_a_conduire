@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://bw3rxl58faxi2"]
+
+[ext_resource type="Texture2D" uid="uid://fje7v82eye5h" path="res://Skybox/skybox-day.png" id="1_du857"]
+[ext_resource type="PackedScene" uid="uid://fo6kt54q87tf" path="res://scenes/arcade_car.tscn" id="2_nr1ri"]
+[ext_resource type="PackedScene" uid="uid://cnxyp5opth3qb" path="res://scenes/voiture_garee.tscn" id="3_kpl3k"]
+[ext_resource type="PackedScene" uid="uid://bgcumhuxh1be1" path="res://scenes/place_parking.tscn" id="4_kpl3k"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7rque"]
+panorama = ExtResource("1_du857")
+
+[sub_resource type="Sky" id="Sky_t8f6l"]
+sky_material = SubResource("PanoramaSkyMaterial_7rque")
+
+[sub_resource type="Environment" id="Environment_nr1ri"]
+background_mode = 2
+sky = SubResource("Sky_t8f6l")
+ambient_light_source = 3
+reflected_light_source = 2
+ssao_enabled = true
+ssao_intensity = 2.05
+ssil_enabled = true
+fog_light_color = Color(0.30755928, 0.59975535, 0.65797806, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0l4sy"]
+albedo_color = Color(0.18521258, 0.14985743, 0.14112079, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t8f6l"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_loyww"]
+size = Vector3(0.25390625, 0.18566895, 3.5654297)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t8f6l"]
+size = Vector3(1, 0.20050049, 0.21826172)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0l4sy"]
+size = Vector3(18.061157, 1, 1)
+
+[node name="niveau_tutoriel" type="Node3D" unique_id=261517795]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2046021726]
+environment = SubResource("Environment_nr1ri")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1146382300]
+transform = Transform3D(-0.17253792, -0.8742413, -0.45379847, 0.6392615, -0.44988775, 0.6236553, -0.7493838, -0.18249175, 0.63649136, -0.8851303, 3.2866697, -0.37521127)
+light_color = Color(1, 0.9411765, 0.83137256, 1)
+light_energy = 0.36
+light_specular = 0.0
+shadow_enabled = true
+shadow_bias = 0.287
+shadow_blur = 0.562
+sky_mode = 1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1601592442]
+transform = Transform3D(99.999794, 0.19815539, -0.056792617, -0.19812427, 99.999794, 0.05500532, 0.056900986, -0.0548932, 99.99997, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_0l4sy")
+mesh = SubResource("PlaneMesh_t8f6l")
+
+[node name="player" parent="." unique_id=1455154640 instance=ExtResource("2_nr1ri")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5.7512527)
+
+[node name="parked" type="Node3D" parent="." unique_id=1780916667]
+
+[node name="delim_sim_pair" type="Node3D" parent="parked" unique_id=1072039157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4878949, -0.06565559, 0.39386153)
+
+[node name="Delim_sol2" type="MeshInstance3D" parent="parked/delim_sim_pair" unique_id=1188533989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.524417, -0.00034441054, 0.00013846159)
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/delim_sim_pair/Delim_sol2" unique_id=573938651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Delim_sol" type="MeshInstance3D" parent="parked/delim_sim_pair" unique_id=1963971934]
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/delim_sim_pair/Delim_sol" unique_id=1890219585]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Vehicle" parent="parked" unique_id=378508316 instance=ExtResource("3_kpl3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8683295, -0.067611694, 0.36237073)
+
+[node name="parked" type="Node3D" parent="parked" unique_id=115842542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.599951, 0, 0)
+
+[node name="delim_sim_pair" type="Node3D" parent="parked/parked" unique_id=1779525538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54741704, -0.06565559, 0.39386153)
+
+[node name="Delim_sol2" type="MeshInstance3D" parent="parked/parked/delim_sim_pair" unique_id=1532707027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.524417, -0.00034441054, 0.00013846159)
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/parked/delim_sim_pair/Delim_sol2" unique_id=55508714]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Delim_sol" type="MeshInstance3D" parent="parked/parked/delim_sim_pair" unique_id=1832026843]
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/parked/delim_sim_pair/Delim_sol" unique_id=1619974958]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Vehicle" parent="parked/parked" unique_id=1575227660 instance=ExtResource("3_kpl3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8088074, -0.067611694, 0.36237073)
+
+[node name="parked2" type="Node3D" parent="parked" unique_id=1755738712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9083176, 0, 0)
+
+[node name="delim_sim_pair" type="Node3D" parent="parked/parked2" unique_id=1022513023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54741704, -0.06565559, 0.39386153)
+
+[node name="Delim_sol2" type="MeshInstance3D" parent="parked/parked2/delim_sim_pair" unique_id=442802941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.524417, -0.00034441054, 0.00013846159)
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/parked2/delim_sim_pair/Delim_sol2" unique_id=613907931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Delim_sol" type="MeshInstance3D" parent="parked/parked2/delim_sim_pair" unique_id=1611456252]
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/parked2/delim_sim_pair/Delim_sol" unique_id=927304729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Vehicle" parent="parked/parked2" unique_id=2137770826 instance=ExtResource("3_kpl3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8088074, -0.067611694, 0.36237073)
+
+[node name="parked" type="Node3D" parent="parked/parked2" unique_id=487552371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5404289, 0, 0)
+
+[node name="delim_sim_pair" type="Node3D" parent="parked/parked2/parked" unique_id=473819519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54741704, -0.06565559, 0.39386153)
+
+[node name="Delim_sol2" type="MeshInstance3D" parent="parked/parked2/parked/delim_sim_pair" unique_id=635553967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.524417, -0.00034441054, 0.00013846159)
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/parked2/parked/delim_sim_pair/Delim_sol2" unique_id=933127135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Delim_sol" type="MeshInstance3D" parent="parked/parked2/parked/delim_sim_pair" unique_id=600337841]
+mesh = SubResource("BoxMesh_loyww")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="parked/parked2/parked/delim_sim_pair/Delim_sol" unique_id=464939782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.007659912, -1.7098522)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="Vehicle" parent="parked/parked2/parked" unique_id=955823812 instance=ExtResource("3_kpl3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8088074, -0.067611694, 0.36237073)
+
+[node name="PlaceParking" parent="." unique_id=1893917349 instance=ExtResource("4_kpl3k")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.935461, -0.009531498, 0.46356082)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1454639610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3237915, -0.31443763, 2.6636248)
+mesh = SubResource("BoxMesh_0l4sy")

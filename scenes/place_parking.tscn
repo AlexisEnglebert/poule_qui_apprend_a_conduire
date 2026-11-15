@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bgcumhuxh1be1"]
 
 [ext_resource type="Script" uid="uid://dawmv5q4ydfbc" path="res://scripts/place_parking.gd" id="1_22f5o"]
-[ext_resource type="Material" uid="uid://d2yiimio70k34" path="res://emission/halo_vert.tres" id="1_wbj5p"]
-[ext_resource type="PackedScene" uid="uid://cnxyp5opth3qb" path="res://scenes/voiture_garee.tscn" id="1_wyn8r"]
+[ext_resource type="Shader" uid="uid://6n31hho7yg7a" path="res://scenes/hallow.gdshader" id="3_22f5o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22f5o"]
+albedo_color = Color(0.18431373, 0.14901961, 0.14117648, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_jtejf"]
 size = Vector3(1.5, 0.05, 3.2)
@@ -10,46 +12,61 @@ size = Vector3(1.5, 0.05, 3.2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_jtejf"]
 size = Vector3(2.5, 2, 5)
 
-[sub_resource type="QuadMesh" id="QuadMesh_jtejf"]
-size = Vector2(3.2, 1.5)
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t8f6l"]
+render_priority = 0
+shader = ExtResource("3_22f5o")
+shader_parameter/color = Color(0.40412843, 0.84829926, 0.36610386, 0.8)
+shader_parameter/box_height = 1.5
+shader_parameter/fade_power = 2.0
+shader_parameter/pulse_speed = 2.0
+shader_parameter/pulse_amount = 0.15
 
-[sub_resource type="QuadMesh" id="QuadMesh_f4m2p"]
-size = Vector2(1.5, 1.5)
+[sub_resource type="BoxMesh" id="BoxMesh_loyww"]
+size = Vector3(1.494215, 0.47753906, 3.1651201)
 
-[sub_resource type="QuadMesh" id="QuadMesh_d0wrn"]
-size = Vector2(1.5, 1.5)
+[sub_resource type="TextMesh" id="TextMesh_loyww"]
+text = "P"
+font_size = 60
+uppercase = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_t8f6l"]
+size = Vector3(0.066, 0.05, 3.21)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0l4sy"]
+size = Vector3(0.066, 0.05, 1.6249772)
 
 [node name="PlaceParking" type="Area3D" unique_id=1893917349]
 script = ExtResource("1_22f5o")
 
-[node name="VoitureGauche" parent="." unique_id=1455154640 instance=ExtResource("1_wyn8r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5787759, 0.07505095, -0.07209441)
-
-[node name="VoitureDevant" parent="." unique_id=1048210209 instance=ExtResource("1_wyn8r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07309955, -3.5982084)
-braking_speed = 100.0
-
-[node name="VoitureDerriere" parent="." unique_id=419157138 instance=ExtResource("1_wyn8r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0131111145, 0.08761677, 3.3786182)
-
 [node name="Sol" type="MeshInstance3D" parent="." unique_id=957324550]
+material_override = SubResource("StandardMaterial3D_22f5o")
 mesh = SubResource("BoxMesh_jtejf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1633564307]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_jtejf")
 
-[node name="HaloRoute" type="MeshInstance3D" parent="." unique_id=509653994]
-transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.7, 0.75, 0)
-mesh = SubResource("QuadMesh_jtejf")
-surface_material_override/0 = ExtResource("1_wbj5p")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=273527258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0045934916, 0.25211716, -0.021307468)
+material_override = SubResource("ShaderMaterial_t8f6l")
+mesh = SubResource("BoxMesh_loyww")
 
-[node name="HaloAvant" type="MeshInstance3D" parent="." unique_id=97486477]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 1.55)
-mesh = SubResource("QuadMesh_f4m2p")
-surface_material_override/0 = ExtResource("1_wbj5p")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1778669558]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.006929636, 0.096720695, 0.005479574)
+mesh = SubResource("TextMesh_loyww")
 
-[node name="HaloArriere" type="MeshInstance3D" parent="." unique_id=1662623984]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -1.55)
-mesh = SubResource("QuadMesh_d0wrn")
-surface_material_override/0 = ExtResource("1_wbj5p")
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1756975647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.78417563, 0.00077061355, -0.0032043457)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D3" unique_id=910824038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.558613, 0.00077061355, -0.0032043457)
+mesh = SubResource("BoxMesh_t8f6l")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=5166173]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0049990714, 0.0015538931, 1.5938917)
+mesh = SubResource("BoxMesh_0l4sy")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1977986288]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0049992125, 0.0015538931, -1.637864)
+mesh = SubResource("BoxMesh_0l4sy")
