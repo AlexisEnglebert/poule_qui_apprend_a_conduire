@@ -22,7 +22,6 @@ func _physics_process(delta):
 					print(voiture_parked)
 			else:
 				current_time_parked = 0.0
-		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cjka2nxlkoh6q" path="res://scripts/vehicle.gd" id="1_wr17c"]
 [ext_resource type="Script" uid="uid://btqy4bt0dk3se" path="res://scripts/wheel.gd" id="2_67xbp"]
+[ext_resource type="PackedScene" uid="uid://dvao3wdofaxh6" path="res://scenes/gui.tscn" id="3_7dlhd"]
 
 [sub_resource type="Curve" id="Curve_bt7kc"]
 _data = [Vector2(0, 0.494505), 0.0, 2.04495, 0, 0, Vector2(0.617978, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.692308), -1.4839, 0.0, 0, 0]
@@ -414,3 +415,7 @@ wheel_node = NodePath("RearRightWheel")
 [node name="wheel_backRight" type="MeshInstance3D" parent="WheelRearRight/RearRightWheel" unique_id=515663253]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
 mesh = SubResource("ArrayMesh_0m480")
+
+[node name="Vie" type="Node" parent="." unique_id=879901651]
+
+[node name="GUI" parent="." unique_id=1346108716 instance=ExtResource("3_7dlhd")]

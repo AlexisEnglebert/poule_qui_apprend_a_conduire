@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bw3rxl58faxi2"]
 
 [ext_resource type="Texture2D" uid="uid://fje7v82eye5h" path="res://Skybox/skybox-day.png" id="1_du857"]
-[ext_resource type="PackedScene" uid="uid://fo6kt54q87tf" path="res://scenes/arcade_car.tscn" id="2_nr1ri"]
+[ext_resource type="PackedScene" uid="uid://bvfq4ipy1jqk1" path="res://scenes/voiture.tscn" id="2_kpl3k"]
 [ext_resource type="PackedScene" uid="uid://cnxyp5opth3qb" path="res://scenes/voiture_garee.tscn" id="3_kpl3k"]
 [ext_resource type="PackedScene" uid="uid://bgcumhuxh1be1" path="res://scenes/place_parking.tscn" id="4_kpl3k"]
 
@@ -55,8 +55,8 @@ transform = Transform3D(99.999794, 0.19815539, -0.056792617, -0.19812427, 99.999
 material_override = SubResource("StandardMaterial3D_0l4sy")
 mesh = SubResource("PlaneMesh_t8f6l")
 
-[node name="player" parent="." unique_id=1455154640 instance=ExtResource("2_nr1ri")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5.7512527)
+[node name="Voiture" parent="." unique_id=1115999846 instance=ExtResource("2_kpl3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.047995567, -10.142934)
 
 [node name="parked" type="Node3D" parent="." unique_id=1780916667]
 

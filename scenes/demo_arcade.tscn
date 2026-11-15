@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://bgcumhuxh1be1" path="res://scenes/place_parking.tscn" id="1_mgdar"]
 [ext_resource type="PackedScene" uid="uid://fo6kt54q87tf" path="res://scenes/arcade_car.tscn" id="2_dmfpn"]
 [ext_resource type="PackedScene" uid="uid://b2hlchrj4h2b7" path="res://zizi/gevp/scenes/engine_sound.tscn" id="3_7qkkc"]
-[ext_resource type="Script" uid="uid://bq6kx8xl0niko" path="res://scripts/gui.gd" id="4_j2kv5"]
 [ext_resource type="Script" uid="uid://c0osqcm5k63ow" path="res://scripts/camera.gd" id="5_qpawl"]
 [ext_resource type="PackedScene" uid="uid://dxnvsoi1pvfeu" path="res://zizi/gevp/scenes/track.tscn" id="6_jim0m"]
 [ext_resource type="Script" uid="uid://chxvj0ecu2qlx" path="res://scripts/debug.gd" id="7_unhf6"]
@@ -27,33 +26,6 @@ angular_damp_mode = 1
 [node name="EngineSound" parent="VehicleController/VehicleRigidBody" unique_id=1698902002 node_paths=PackedStringArray("vehicle") instance=ExtResource("3_7qkkc")]
 max_db = -24.0
 vehicle = NodePath("..")
-
-[node name="GUI" type="Control" parent="." unique_id=1583577094 node_paths=PackedStringArray("vehicle")]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("4_j2kv5")
-vehicle = NodePath("../VehicleController/VehicleRigidBody")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="GUI" unique_id=649496069]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Speed" type="Label" parent="GUI/VBoxContainer" unique_id=333951008]
-layout_mode = 2
-
-[node name="RPM" type="Label" parent="GUI/VBoxContainer" unique_id=2113234077]
-layout_mode = 2
-
-[node name="Gear" type="Label" parent="GUI/VBoxContainer" unique_id=1457535347]
-layout_mode = 2
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1556364519 node_paths=PackedStringArray("follow_this")]
 transform = Transform3D(1, 0, 0, 0, 0.989776, 0.142629, 0, -0.142629, 0.989776, 4.05282, 1.58316, 5.80061)
