@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b3hn0ldh6jvvh"]
+
+[ext_resource type="Script" uid="uid://dmvm1k1rtsryu" path="res://scripts/cara.gd" id="1_ye883"]
+[ext_resource type="PackedScene" uid="uid://ddjdiwmborkg" path="res://cara.glb" id="2_ytbek"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jtejf"]
+size = Vector3(0.3017578, 0.93878174, 0.32470703)
+
+[node name="cara" type="Area3D" unique_id=2051445206]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+script = ExtResource("1_ye883")
+metadata/_edit_group_ = true
+
+[node name="cara" parent="." unique_id=1479579032 instance=ExtResource("2_ytbek")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1122547554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04248047, 0.19741821, -0.09382427)
+shape = SubResource("BoxShape3D_jtejf")
+metadata/_edit_group_ = true
