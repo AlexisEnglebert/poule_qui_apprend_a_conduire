@@ -1,0 +1,721 @@
+[gd_scene format=4 uid="uid://5cd0bneuso8i"]
+
+[ext_resource type="Script" uid="uid://1tesaeekx586" path="res://scripts/niveau_3.gd" id="1_kfydd"]
+[ext_resource type="Texture2D" uid="uid://ci7vq8ptp7y6w" path="res://routes/Previews/tree-small.png" id="2_6gybj"]
+[ext_resource type="PackedScene" uid="uid://bgcumhuxh1be1" path="res://scenes/place_parking.tscn" id="2_adtit"]
+[ext_resource type="PackedScene" uid="uid://bvfq4ipy1jqk1" path="res://scenes/voiture.tscn" id="2_apqop"]
+[ext_resource type="PackedScene" uid="uid://b5wj2qdjmyj5t" path="res://scenes/enemy.tscn" id="2_twupq"]
+[ext_resource type="PackedScene" uid="uid://cso711s3jff4m" path="res://routes/Models/FBX format/driveway-long.fbx" id="3_apqop"]
+[ext_resource type="PackedScene" uid="uid://ukqytmbhv6fd" path="res://kenney_mini-forest_1.0/Models/FBX format/platform.fbx" id="4_yg0hx"]
+[ext_resource type="PackedScene" uid="uid://bk3btbetof3a5" path="res://kenney_mini-forest_1.0/Models/FBX format/tree.fbx" id="5_twupq"]
+[ext_resource type="PackedScene" uid="uid://ds15srm6fxdl4" path="res://kenney_mini-forest_1.0/Models/FBX format/tree-high.fbx" id="6_adtit"]
+[ext_resource type="PackedScene" uid="uid://b144cfh7sj8d5" path="res://kenney_mini-forest_1.0/Models/FBX format/plant.fbx" id="7_6efj6"]
+[ext_resource type="PackedScene" uid="uid://b8gk2nfxmjdge" path="res://kenney_mini-forest_1.0/Models/FBX format/patch-grass.fbx" id="8_31mem"]
+[ext_resource type="PackedScene" uid="uid://diqh43unnjq8i" path="res://kenney_mini-forest_1.0/Models/FBX format/rocks-low.fbx" id="9_36ykj"]
+[ext_resource type="PackedScene" uid="uid://d2mc8ny5m81yy" path="res://kenney_mini-forest_1.0/Models/FBX format/flag.fbx" id="10_07j43"]
+[ext_resource type="PackedScene" uid="uid://o42q7s17bvv7" path="res://routes/Models/GLB format/driveway-short.glb" id="11_1sp65"]
+[ext_resource type="PackedScene" uid="uid://c0v1tl6msimaj" path="res://ville indus /Models/FBX format/building-p.fbx" id="12_3ax13"]
+[ext_resource type="PackedScene" uid="uid://qh2snr8tcg34" path="res://ville indus /Models/FBX format/building-q.fbx" id="13_mu7xm"]
+[ext_resource type="PackedScene" uid="uid://cdmkruhk1ehcy" path="res://ville indus /Models/FBX format/building-r.fbx" id="14_s4ytx"]
+[ext_resource type="PackedScene" uid="uid://q16kub5jvymq" path="res://ville indus /Models/FBX format/building-s.fbx" id="15_ilidf"]
+[ext_resource type="PackedScene" uid="uid://hyoayjfmond1" path="res://ville indus /Models/FBX format/building-t.fbx" id="16_2v076"]
+[ext_resource type="PackedScene" uid="uid://c011kmg06d702" path="res://ville indus /Models/FBX format/chimney-basic.fbx" id="17_6qisk"]
+[ext_resource type="PackedScene" uid="uid://bal57vligohqo" path="res://routes/Models/FBX format/driveway-short.fbx" id="18_wedhd"]
+[ext_resource type="PackedScene" uid="uid://rga1wnf3356w" path="res://routes/Models/FBX format/building-type-g.fbx" id="19_yk4vu"]
+[ext_resource type="PackedScene" uid="uid://c374e3xnwgrmg" path="res://routes/Models/FBX format/building-type-f.fbx" id="20_a6wwr"]
+[ext_resource type="PackedScene" uid="uid://ccc52oi7jox33" path="res://routes/Models/FBX format/building-type-h.fbx" id="21_vv0v3"]
+[ext_resource type="PackedScene" uid="uid://dv67ldubgld7x" path="res://routes/Models/FBX format/building-type-i.fbx" id="22_ro1r8"]
+[ext_resource type="PackedScene" uid="uid://dd0pcqok5amxw" path="res://routes/Models/FBX format/building-type-j.fbx" id="23_na2rw"]
+[ext_resource type="PackedScene" uid="uid://cuqt4gnr35sdv" path="res://routes/Models/FBX format/building-type-k.fbx" id="24_vjjeg"]
+[ext_resource type="PackedScene" uid="uid://iciicljkdqx0" path="res://routes/Models/FBX format/building-type-l.fbx" id="25_rdnkg"]
+[ext_resource type="PackedScene" uid="uid://joln0vqalrac" path="res://routes/Models/FBX format/fence-1x2.fbx" id="26_djiu4"]
+[ext_resource type="PackedScene" uid="uid://cdmc1pa4cmh01" path="res://routes/Models/FBX format/fence-2x2.fbx" id="27_on2hb"]
+[ext_resource type="PackedScene" uid="uid://mkqrnkk1lhx3" path="res://routes/Models/FBX format/tree-large.fbx" id="28_5tafi"]
+[ext_resource type="PackedScene" uid="uid://bhoi4pgofagaa" path="res://ville indus /Models/FBX format/building-b.fbx" id="29_f4ivr"]
+[ext_resource type="PackedScene" uid="uid://crvvnpgsyekyb" path="res://ville indus /Models/FBX format/building-i.fbx" id="30_o12j6"]
+[ext_resource type="PackedScene" uid="uid://cjn65vrcu81v3" path="res://ville indus /Models/FBX format/building-h.fbx" id="31_0uw14"]
+[ext_resource type="PackedScene" uid="uid://ds40c4vgm06bi" path="res://ville indus /Models/FBX format/building-m.fbx" id="32_g0nu5"]
+[ext_resource type="PackedScene" uid="uid://bltq72be8ynbh" path="res://ville indus /Models/FBX format/windmill-low.fbx" id="33_b71p6"]
+[ext_resource type="PackedScene" uid="uid://d0wgn54hfnviv" path="res://ville indus /Models/FBX format/shipping-container-b.fbx" id="34_14fr2"]
+[ext_resource type="PackedScene" uid="uid://cyxrw140yxf04" path="res://ville indus /Models/FBX format/detail-tank-large.fbx" id="35_lyp2t"]
+[ext_resource type="PackedScene" uid="uid://cbcvf3t8618oq" path="res://routes 2.0/Models/FBX format/sign-highway.fbx" id="36_kdlnr"]
+[ext_resource type="PackedScene" uid="uid://cmtqo0qk3ayqa" path="res://routes 2.0/Models/FBX format/traffic-light.fbx" id="37_omk4e"]
+[ext_resource type="PackedScene" uid="uid://cg8464r8axk88" path="res://routes 2.0/Models/FBX format/road-sign-street.fbx" id="38_7ad4a"]
+[ext_resource type="PackedScene" uid="uid://ebpbxobv8vr8" path="res://routes 2.0/Models/FBX format/road-curve-intersection.fbx" id="39_darl0"]
+[ext_resource type="PackedScene" uid="uid://chh5grbr353dy" path="res://routes 2.0/Models/FBX format/road-bend.fbx" id="40_8ew0m"]
+[ext_resource type="PackedScene" uid="uid://dapkkurwdlw0c" path="res://routes 2.0/Models/FBX format/road-straight-half.fbx" id="41_o5x6y"]
+[ext_resource type="PackedScene" uid="uid://b36xormgnq0cy" path="res://ville indus /Models/FBX format/building-d.fbx" id="42_w7rou"]
+[ext_resource type="PackedScene" uid="uid://neicsfox11co" path="res://ville indus /Models/FBX format/building-e.fbx" id="43_6dvhx"]
+[ext_resource type="PackedScene" uid="uid://bd3ynm4ak4fai" path="res://ville indus /Models/FBX format/water-tower.fbx" id="44_wa4vb"]
+[ext_resource type="PackedScene" uid="uid://bsrl3okwyggop" path="res://routes 2.0/Models/FBX format/bridge-pillar-wide.fbx" id="45_6rwum"]
+[ext_resource type="PackedScene" uid="uid://c30iyip7cu0hn" path="res://kenney_mini-forest_1.0/Models/FBX format/rocks-high.fbx" id="46_av120"]
+[ext_resource type="PackedScene" uid="uid://drgbhud0bmmjg" path="res://routes/Models/FBX format/tree-small.fbx" id="47_6hp1k"]
+[ext_resource type="ArrayMesh" uid="uid://k8bsaysdlufs" path="res://routes/Models/OBJ format/tree-large.obj" id="48_jr4ty"]
+[ext_resource type="PackedScene" uid="uid://j6jd0xhnbqtx" path="res://routes 2.0/Models/FBX format/road-slant.fbx" id="49_2p4it"]
+[ext_resource type="ArrayMesh" uid="uid://owcc1luvx4ml" path="res://routes 2.0/Models/OBJ format/road-end-round.obj" id="50_guv61"]
+[ext_resource type="PackedScene" uid="uid://b4av20l8pmhv5" path="res://ville indus /Models/FBX format/building-o.fbx" id="51_r1q1n"]
+[ext_resource type="PackedScene" uid="uid://b8yfjschtv7qa" path="res://ville indus /Models/FBX format/building-n.fbx" id="52_4s6k1"]
+[ext_resource type="Texture2D" uid="uid://fje7v82eye5h" path="res://Skybox/skybox-day.png" id="54_apqop"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_iyftj"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kd70r"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xkvt5"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_djaty"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kpprv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5h56d"]
+albedo_texture = ExtResource("2_6gybj")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ovoiw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egu1d"]
+albedo_color = Color(0.24, 0.24, 0.24, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v6jkp"]
+material = SubResource("StandardMaterial3D_egu1d")
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_yg0hx"]
+panorama = ExtResource("54_apqop")
+
+[sub_resource type="Sky" id="Sky_t8f6l"]
+sky_material = SubResource("PanoramaSkyMaterial_yg0hx")
+
+[sub_resource type="Environment" id="Environment_twupq"]
+background_mode = 2
+sky = SubResource("Sky_t8f6l")
+ambient_light_source = 3
+reflected_light_source = 2
+ssao_enabled = true
+ssao_intensity = 2.05
+ssil_enabled = true
+fog_light_color = Color(0.30755928, 0.59975535, 0.65797806, 1)
+
+[node name="root" type="Node3D" unique_id=1097903069 node_paths=PackedStringArray("voiture")]
+transform = Transform3D(-1.0000001, -8.742278e-08, 0, 8.7422784e-08, -1, 0, 0, 0, 1.0000001, 0, 0, 0)
+script = ExtResource("1_kfydd")
+voiture = NodePath("Voiture")
+
+[node name="PlaceParking" parent="." unique_id=1893917349 instance=ExtResource("2_adtit")]
+transform = Transform3D(1.1924881e-08, 8.7422755e-08, 1, 0, -1, 8.7422755e-08, 1, -1.0425061e-15, -1.1924881e-08, -88.17677, -0.7225519, 123.86724)
+
+[node name="enemy" parent="." unique_id=1552470985 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 1.6940659e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -51.582527, -0.78656006, 119.96186)
+
+[node name="enemy2" parent="." unique_id=1595642966 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 2.5410988e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -58.06352, -0.7865606, 119.96186)
+vitesse = 7.0
+
+[node name="enemy3" parent="." unique_id=1977912142 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 2.9646153e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -62.050148, -0.78656095, 119.96186)
+vitesse = 4.5
+
+[node name="enemy5" parent="." unique_id=437796252 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 3.8116483e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -66.105774, -0.7865613, 119.96186)
+vitesse = 4.5
+
+[node name="enemy9" parent="." unique_id=486982799 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 5.9292306e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -70.613335, -0.7865617, 119.96186)
+vitesse = 3.6
+
+[node name="enemy10" parent="." unique_id=1931378266 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 6.352747e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -71.62712, -0.7865618, 119.96186)
+vitesse = 4.5
+
+[node name="enemy11" parent="." unique_id=1744455975 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 6.7762636e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -71.90088, -0.7865618, 119.96186)
+vitesse = 1.2
+
+[node name="enemy14" parent="." unique_id=566901277 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 8.046813e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -75.12316, -0.7865621, 119.96186)
+vitesse = 5.0
+
+[node name="enemy16" parent="." unique_id=1729396211 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 8.893846e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -78.39744, -0.7865624, 119.96186)
+vitesse = 4.5
+
+[node name="enemy17" parent="." unique_id=1861365185 instance=ExtResource("2_twupq")]
+transform = Transform3D(-4.371139e-08, -8.742278e-08, -1, 8.893846e-21, -1, 8.742278e-08, -1, 3.821371e-15, 4.371139e-08, -78.39744, -0.7865624, 119.96186)
+vitesse = 20.0
+
+[node name="Voiture" parent="." unique_id=1115999846 instance=ExtResource("2_apqop")]
+transform = Transform3D(4.371139e-08, 3.821371e-15, 1, 8.742278e-08, -1, 0, 1, 8.742278e-08, -4.371139e-08, -1.5455472, -0.35017124, 123.17204)
+
+[node name="GUI" parent="Voiture" index="2" unique_id=1346108716]
+health = 300.0
+
+[node name="Node3D" type="Node3D" parent="." unique_id=120652668]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="LowpolyTerrain" type="Node3D" parent="Node3D" unique_id=332514304]
+transform = Transform3D(-0.06733536, -1.7881392e-07, 0, -1.8626451e-09, 2.3909702, 0, -5.5879354e-09, 0, 4.196025, 0, 0, 0)
+metadata/_lowpoly_terrain = true
+metadata/_lte_resolution = 48
+metadata/_lte_world_size = 48.0
+metadata/_lte_mask = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+metadata/_lte_heights = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+metadata/_lte_roads = []
+metadata/_lte_rivers = []
+metadata/_lte_level_path = ""
+metadata/_lte_base_y = -3.0
+metadata/_lte_height_min = -3.0
+metadata/_lte_height_max = 8.0
+metadata/_lte_top_y_offset = 0.0
+metadata/_lte_cliff_y_offset = 0.0
+metadata/_lte_feature_y_offset = 0.0
+metadata/_lte_double_sided = false
+metadata/_lte_top_normal_up_bias = 0.0
+metadata/_lte_brush_top_color = Color(0.44, 0.69, 0.2, 1)
+metadata/_lte_brush_cliff_color = Color(0.45, 0.25, 0.13, 1)
+metadata/_lte_brush_top_tile_size = 4.0
+metadata/_lte_brush_cliff_tile_size = 4.0
+metadata/_lte_collision_enabled = false
+metadata/_lte_collision_layer = 1
+metadata/_lte_auto_expand = true
+metadata/_lte_expand_chunk = 8
+metadata/_lte_max_resolution = 256
+metadata/_lte_generator_raise_height = 2.0
+metadata/_lte_generator_lower_depth = 1.0
+metadata/_lte_generator_color_tolerance = 0.2
+metadata/_lte_generator_smoothness = 0.0
+metadata/_lte_generator_clear_features = true
+metadata/_lte_generator_use_single_style = true
+metadata/_lte_generator_green_top_color = Color(0.44, 0.69, 0.2, 1)
+metadata/_lte_generator_green_cliff_color = Color(0.45, 0.25, 0.13, 1)
+metadata/_lte_generator_green_top_tile_size = 4.0
+metadata/_lte_generator_green_cliff_tile_size = 4.0
+metadata/_lte_generator_red_top_color = Color(0.44, 0.69, 0.2, 1)
+metadata/_lte_generator_red_cliff_color = Color(0.45, 0.25, 0.13, 1)
+metadata/_lte_generator_red_top_tile_size = 4.0
+metadata/_lte_generator_red_cliff_tile_size = 4.0
+metadata/_lte_generator_blue_top_color = Color(0.44, 0.69, 0.2, 1)
+metadata/_lte_generator_blue_cliff_color = Color(0.45, 0.25, 0.13, 1)
+metadata/_lte_generator_blue_top_tile_size = 4.0
+metadata/_lte_generator_blue_cliff_tile_size = 4.0
+metadata/_lte_road_width = 2.6
+metadata/_lte_road_y_offset = 0.035
+metadata/_lte_road_color = Color(0.76, 0.56, 0.31, 1)
+metadata/_lte_road_tile_size = 4.0
+metadata/_lte_road_collision = true
+metadata/_lte_river_width = 3.3
+metadata/_lte_river_depth = 0.65
+metadata/_lte_river_surface_drop = 0.15
+metadata/_lte_river_color = Color(0.12, 0.38, 0.55, 0.72)
+metadata/_lte_river_tile_size = 6.0
+metadata/_lte_river_roughness = 0.18
+metadata/_lte_river_normal_strength = 0.8
+metadata/_lte_river_refraction = 0.012
+metadata/_lte_river_flow_speed = 0.03
+metadata/_lte_river_flow_angle = 32.211
+metadata/_lte_river_collision = false
+metadata/_lte_style_palette = [{
+"cliff_color": Color(0.45, 0.25, 0.13, 1),
+"cliff_texture": null,
+"cliff_tile_size": 4.0,
+"signature": "70b033ff|734021ff|none|none|4.0000|4.0000",
+"top_color": Color(0.44, 0.69, 0.2, 1),
+"top_texture": null,
+"top_tile_size": 4.0
+}]
+metadata/_lte_cell_styles = PackedInt32Array(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1)
+metadata/_lte_cell_active = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==")
+metadata/_lte_winding_version = 2
+
+[node name="_GeneratedTerrainMesh" type="MeshInstance3D" parent="Node3D/LowpolyTerrain" unique_id=891390321]
+mesh = SubResource("ArrayMesh_iyftj")
+
+[node name="_GeneratedTerrainChunks" type="Node3D" parent="Node3D/LowpolyTerrain" unique_id=426136837]
+
+[node name="Chunk_0_0" type="MeshInstance3D" parent="Node3D/LowpolyTerrain/_GeneratedTerrainChunks" unique_id=1578006822]
+mesh = SubResource("ArrayMesh_kd70r")
+
+[node name="Chunk_1_0" type="MeshInstance3D" parent="Node3D/LowpolyTerrain/_GeneratedTerrainChunks" unique_id=2142480581]
+mesh = SubResource("ArrayMesh_xkvt5")
+
+[node name="Chunk_0_1" type="MeshInstance3D" parent="Node3D/LowpolyTerrain/_GeneratedTerrainChunks" unique_id=386683843]
+mesh = SubResource("ArrayMesh_djaty")
+
+[node name="Chunk_1_1" type="MeshInstance3D" parent="Node3D/LowpolyTerrain/_GeneratedTerrainChunks" unique_id=1697505431]
+mesh = SubResource("ArrayMesh_kpprv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D" unique_id=1553579252]
+transform = Transform3D(-2.741855, -2.842171e-13, 0, 2.2737368e-13, -4.01861, 0, 0, 0, -8.099413, -0.05339355, 0.0024106642, -0.07299335)
+material_override = SubResource("StandardMaterial3D_5h56d")
+mesh = SubResource("PlaneMesh_ovoiw")
+
+[node name="driveway-long" parent="Node3D" unique_id=151045213 instance=ExtResource("3_apqop")]
+transform = Transform3D(-4.325858, 0.00073208543, 0.097684704, -0.00070576277, -4.327913, 0.10001296, 0.010456448, 0.010707183, 40.41918, -0.006962412, -0.061569244, 0.13132118)
+
+[node name="platform" parent="Node3D" unique_id=1425496867 instance=ExtResource("4_yg0hx")]
+transform = Transform3D(-1.3006716, 1.02950295e-07, 0, -1.1370828e-07, -1.1776148, 0, 0, 0, 1.3006716, 1.4951817, 0.034008633, 3.8121989)
+
+[node name="tree" parent="Node3D" unique_id=632418697 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, 1.6459659, 2.631042e-07, 0.6472797)
+
+[node name="tree-high" parent="Node3D" unique_id=969150656 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.6620951, 5.7882183e-08, 0, -5.788219e-08, -0.6620952, 0, 0, 0, 0.6620951, -1.3914077, -1.216407e-07, 3.876738)
+
+[node name="plant" parent="Node3D" unique_id=1567506668 instance=ExtResource("7_6efj6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.2626913, -1.1038797e-07, 1.3327035)
+
+[node name="plant2" parent="Node3D" unique_id=1818562679 instance=ExtResource("7_6efj6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.2042634, -1.0528005e-07, 1.8117635)
+
+[node name="plant3" parent="Node3D" unique_id=1246490254 instance=ExtResource("7_6efj6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.1445979, -1.0006392e-07, -3.8350415)
+
+[node name="patch-grass" parent="Node3D" unique_id=876699984 instance=ExtResource("8_31mem")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.153206, -1.00816465e-07, -2.4129255)
+
+[node name="rocks-low" parent="Node3D" unique_id=149594753 instance=ExtResource("9_36ykj")]
+transform = Transform3D(-0.9999999, 3.939787e-08, 0, -8.7422755e-08, -0.45065922, 0, 0, 0, 0.9999999, 1.3474325, 1.17796276e-07, 5.7506804)
+
+[node name="patch-grass2" parent="Node3D" unique_id=697286677 instance=ExtResource("8_31mem")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.4544578, -1.2715272e-07, 7.2222557)
+
+[node name="tree2" parent="Node3D" unique_id=619961295 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 1.677531, 1.4665443e-07, 7.6110973)
+
+[node name="tree3" parent="Node3D" unique_id=1462450855 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.600452, -1.3991597e-07, 4.5432105)
+
+[node name="flag" parent="Node3D" unique_id=1953110441 instance=ExtResource("10_07j43")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -0.95764446, -8.371993e-08, -0.5346717)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Node3D" unique_id=2035626766]
+transform = Transform3D(-34.538734, 1.8472198e-06, 0, -3.0194592e-06, -21.129818, 0, 0, 0, 25.542896, -30.861103, 0.18699686, 34.973423)
+mesh = SubResource("PlaneMesh_v6jkp")
+
+[node name="driveway-short2" parent="Node3D" unique_id=1080187211 instance=ExtResource("11_1sp65")]
+transform = Transform3D(6.5543526e-07, 1.1431666e-08, 339.6091, 0.26173255, -14.988148, -5.638867e-11, 14.994607, 0.26161987, -1.4844786e-05, -30.404325, 0.15762827, 51.628338)
+
+[node name="driveway-short2" parent="Node3D/driveway-short2" unique_id=1462488910 instance=ExtResource("11_1sp65")]
+transform = Transform3D(6.5543526e-07, 1.1432462e-08, 339.6091, 0.26173255, -14.988148, -4.3655746e-11, 14.994607, 0.26161987, -1.4844786e-05, -24.892803, -0.07726124, 52.95926)
+
+[node name="building-p" parent="Node3D" unique_id=473384213 instance=ExtResource("12_3ax13")]
+transform = Transform3D(-0.9999999, 8.742268e-08, 0, -8.7422684e-08, -1, 0, 0, 0, 0.9999999, -15.118, 0.187, 34.243)
+
+[node name="building-q" parent="Node3D" unique_id=788464246 instance=ExtResource("13_mu7xm")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -12.151709, 0.187, 34.18)
+
+[node name="building-r" parent="Node3D" unique_id=1986337443 instance=ExtResource("14_s4ytx")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -18.071, 0.187, 33.825)
+
+[node name="building-s" parent="Node3D" unique_id=474117826 instance=ExtResource("15_ilidf")]
+transform = Transform3D(-0.9999999, 8.742274e-08, 0, -8.742275e-08, -1, 0, 0, 0, 0.9999999, -21.381294, 0.04924587, 34.08349)
+
+[node name="building-t" parent="Node3D" unique_id=1114389592 instance=ExtResource("16_2v076")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -24.913368, 0.058503833, 34.113884)
+
+[node name="chimney-basic" parent="Node3D" unique_id=1724555029 instance=ExtResource("17_6qisk")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -10.55947, -9.2313815e-07, 34.183308)
+
+[node name="driveway-short" parent="Node3D" unique_id=33922100 instance=ExtResource("18_wedhd")]
+transform = Transform3D(4.6737554e-07, -3.8653525e-12, 537.16284, 9.3475114e-07, -20.956066, -8.0035534e-11, 10.6923065, 1.8320376e-06, -2.3480134e-05, -39.363243, 0.032663092, 31.213081)
+
+[node name="driveway-short3" parent="Node3D" unique_id=186530132 instance=ExtResource("18_wedhd")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 12.229554, 1.0691417e-06, 33.878128)
+
+[node name="driveway-short4" parent="Node3D" unique_id=653828051 instance=ExtResource("18_wedhd")]
+transform = Transform3D(-5.1646934, 8.7422656e-08, 0, -4.515113e-07, -1, 0, 0, 0, 118.809166, -13.622028, 0.18700191, 20.197218)
+
+[node name="building-type-g" parent="Node3D" unique_id=591070975 instance=ExtResource("19_yk4vu")]
+transform = Transform3D(4.3711385e-08, -2.1316282e-14, -0.9999999, 8.742277e-08, -1, 2.842171e-14, -0.9999999, -8.742278e-08, -4.3711385e-08, -15.598785, 0.18700017, 21.962301)
+
+[node name="building-type-f" parent="Node3D" unique_id=1881166245 instance=ExtResource("20_a6wwr")]
+transform = Transform3D(4.3711385e-08, 0, -0.9999999, 8.742277e-08, -1, 7.1054274e-15, -0.9999999, -8.742278e-08, -4.3711385e-08, -15.726992, 0.18700004, 25.125)
+
+[node name="building-type-g2" parent="Node3D" unique_id=2106842126 instance=ExtResource("19_yk4vu")]
+transform = Transform3D(4.3711385e-08, -7.1054274e-15, -0.9999999, 8.742277e-08, -1, 1.4210855e-14, -0.9999999, -8.742278e-08, -4.3711385e-08, -15.5469, 0.18700007, 19.541)
+
+[node name="building-type-h" parent="Node3D" unique_id=2101448790 instance=ExtResource("21_vv0v3")]
+transform = Transform3D(4.3711385e-08, 0, -0.9999999, 8.742277e-08, -1, 7.1054274e-15, -0.9999999, -8.742278e-08, -4.3711385e-08, -15.44, 0.187, 17.485)
+
+[node name="building-type-i" parent="Node3D" unique_id=5823615 instance=ExtResource("22_ro1r8")]
+transform = Transform3D(4.3711385e-08, -1.4210855e-14, 0.9999999, 8.742277e-08, -1, -2.1316282e-14, 0.9999999, 8.742278e-08, -4.3711385e-08, -15.417633, 0.005894863, 15.226082)
+
+[node name="building-type-i2" parent="Node3D" unique_id=1858316545 instance=ExtResource("22_ro1r8")]
+transform = Transform3D(4.3711385e-08, 0, 0.9999999, 8.742277e-08, -1, -7.1054274e-15, 0.9999999, 8.742278e-08, -4.3711385e-08, -11.767, 0.187, 26.303)
+
+[node name="building-type-j" parent="Node3D" unique_id=251829627 instance=ExtResource("23_na2rw")]
+transform = Transform3D(4.3711385e-08, 0, 0.9999999, 8.742277e-08, -1, -7.1054274e-15, 0.9999999, 8.742278e-08, -4.3711385e-08, -11.668, 0.187, 23.12)
+
+[node name="building-type-k" parent="Node3D" unique_id=1271415966 instance=ExtResource("24_vjjeg")]
+transform = Transform3D(4.3711385e-08, 0, 0.9999999, 8.742277e-08, -1, -7.1054274e-15, 0.9999999, 8.742278e-08, -4.3711385e-08, -11.887, 0.187, 20.165)
+
+[node name="building-type-l" parent="Node3D" unique_id=1801039634 instance=ExtResource("25_rdnkg")]
+transform = Transform3D(4.3711385e-08, 0, 0.9999999, 8.742277e-08, -1, -7.1054274e-15, 0.9999999, 8.742278e-08, -4.3711385e-08, -12.073, 0.187, 16.798)
+
+[node name="fence-1x2" parent="Node3D" unique_id=1221473993 instance=ExtResource("26_djiu4")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.364, 0.187, 16.089)
+
+[node name="fence-2x2" parent="Node3D" unique_id=1199174665 instance=ExtResource("27_on2hb")]
+transform = Transform3D(0.9999999, 8.742275e-08, -8.742277e-08, 8.742274e-08, -1, 3.3881318e-21, -8.742277e-08, -7.642742e-15, -0.9999999, -11.996496, 0.18699999, 15.934551)
+
+[node name="tree-large" parent="Node3D" unique_id=498597303 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.132, 0.187, 13.959)
+
+[node name="tree-large2" parent="Node3D" unique_id=2064161257 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.121, 0.187, 13.108)
+
+[node name="tree-large3" parent="Node3D" unique_id=40485945 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.043, 0.187, 12.176)
+
+[node name="tree-large4" parent="Node3D" unique_id=398033506 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -12.244975, 0.18700002, 14.064)
+
+[node name="tree-large5" parent="Node3D" unique_id=1083550017 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -12.305468, 0.18700002, 13.195)
+
+[node name="tree-large6" parent="Node3D" unique_id=2041652931 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -12.396643, 0.18700002, 12.267)
+
+[node name="building-b" parent="Node3D" unique_id=393807123 instance=ExtResource("29_f4ivr")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -28.154, 0.187, 33.995)
+
+[node name="building-i" parent="Node3D" unique_id=1084109440 instance=ExtResource("30_o12j6")]
+transform = Transform3D(4.3711385e-08, -7.1054274e-15, 0.9999999, 8.742277e-08, -1, -1.4210855e-14, 0.9999999, 8.742278e-08, -4.3711385e-08, -9.378, 0.187, 34.738842)
+
+[node name="building-h" parent="Node3D" unique_id=1535624317 instance=ExtResource("31_0uw14")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -7.662, 0.187, 34.16)
+
+[node name="building-i2" parent="Node3D" unique_id=923452545 instance=ExtResource("30_o12j6")]
+transform = Transform3D(4.3711385e-08, -7.1054274e-15, 0.9999999, 8.742277e-08, -1, -1.4210855e-14, 0.9999999, 8.742278e-08, -4.3711385e-08, -5.593, 0.187, 34.83617)
+
+[node name="building-m" parent="Node3D" unique_id=1868298583 instance=ExtResource("32_g0nu5")]
+transform = Transform3D(2.5891387, -1.4817384e-07, -8.742277e-08, -2.263497e-07, -1.6949108, 8.4703295e-22, -2.263497e-07, 1.29537655e-14, -0.9999999, -0.018, 0.187, 34.666)
+
+[node name="building-m2" parent="Node3D" unique_id=1866672348 instance=ExtResource("32_g0nu5")]
+transform = Transform3D(7.175496e-08, -1.4210855e-14, 1.6415622, 1.4350992e-07, -1.6415625, 0, 1.6415622, 1.4350995e-07, -7.175496e-08, -1.466, 0.187, 27.174)
+
+[node name="windmill-low" parent="Node3D" unique_id=620068403 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.696, 0.187, 11.376)
+
+[node name="windmill-low2" parent="Node3D" unique_id=1399096123 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.837, 0.187, 13.81)
+
+[node name="windmill-low3" parent="Node3D" unique_id=585356658 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.841, 0.187, 16.436)
+
+[node name="windmill-low4" parent="Node3D" unique_id=605242471 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -2.173, 0.187, 18.783)
+
+[node name="windmill-low5" parent="Node3D" unique_id=1139961304 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 1.553, 0.187, 11.6)
+
+[node name="windmill-low6" parent="Node3D" unique_id=591777087 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999938, -8.742225e-08, 0.003490651, 8.742278e-08, -1, 0, 0.003490651, 3.0516245e-10, 0.9999938, 1.164, 0.187, 15.027)
+
+[node name="windmill-low7" parent="Node3D" unique_id=1566605569 instance=ExtResource("33_b71p6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 0.951, 0.187, 18.709)
+
+[node name="shipping-container-b" parent="Node3D" unique_id=1858702368 instance=ExtResource("34_14fr2")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 4.228, 0.187, -2.922)
+
+[node name="detail-tank-large" parent="Node3D" unique_id=1117243306 instance=ExtResource("35_lyp2t")]
+transform = Transform3D(-0.9999999, 8.742274e-08, 0, -8.742275e-08, -1, 0, 0, 0, 0.9999999, -32.6674, 0.1870001, 34.49576)
+
+[node name="sign-highway" parent="Node3D" unique_id=1463373026 instance=ExtResource("36_kdlnr")]
+transform = Transform3D(-0.9999999, 2.69678e-07, 0, -8.7422706e-08, -3.0847588, 0, 0, 0, 6.0364814, -47.31097, 0.1870006, 51.741837)
+
+[node name="sign-highway2" parent="Node3D" unique_id=2013271915 instance=ExtResource("36_kdlnr")]
+transform = Transform3D(-0.9999999, 2.7129414e-07, 0, -8.742272e-08, -3.1032457, 0, 0, 0, 6.5015435, -13.508, 0.187, 51.629734)
+
+[node name="traffic-light" parent="Node3D" unique_id=872327957 instance=ExtResource("37_omk4e")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -38.222607, -3.3415263e-06, 16.819265)
+
+[node name="road-sign-street" parent="Node3D" unique_id=1060830938 instance=ExtResource("38_7ad4a")]
+transform = Transform3D(-2.7286806, 1.9682986e-07, 0, -2.385487e-07, -2.2514718, 0, 0, 0, 0.9999999, -12.744713, 0.1869999, 28.4374)
+
+[node name="road-curve-intersection" parent="Node3D" unique_id=1182824602 instance=ExtResource("39_darl0")]
+transform = Transform3D(-2.2492826, 1.4997998e-07, 0, -1.966384e-07, -1.7155719, 0, 0, 0, 3.6542325, -41.209976, 0.18700002, 25.75304)
+
+[node name="road-bend" parent="Node3D" unique_id=1719645066 instance=ExtResource("40_8ew0m")]
+transform = Transform3D(3.432386, 1.4260772e-07, -3.2043914e-07, 3.000685e-07, -1.6312444, 1.3552527e-20, -3.000687e-07, -1.246718e-14, -3.665396, -37.246853, 0.18699974, 23.982828)
+
+[node name="road-straight-half" parent="Node3D" unique_id=1501945841 instance=ExtResource("41_o5x6y")]
+transform = Transform3D(-47.07082, 8.742267e-08, 0, -4.115059e-06, -1, 0, 0, 0, 3.6084104, -54.06751, 0.18699938, 23.897554)
+
+[node name="road-straight-half2" parent="Node3D" unique_id=596158218 instance=ExtResource("41_o5x6y")]
+transform = Transform3D(1.4777179e-06, -2.9842795e-13, -3.3252964, -9.486769e-20, -1.3959081, 2.2737368e-13, 33.80625, 0, 1.453533e-07, -37.216904, 0.17460114, 13.859667)
+
+[node name="building-d" parent="Node3D" unique_id=169167911 instance=ExtResource("42_w7rou")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -35.543, 0.187, 34.397)
+
+[node name="building-e" parent="Node3D" unique_id=1957026000 instance=ExtResource("43_6dvhx")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -25.115, 0.187, 27.364)
+
+[node name="building-e2" parent="Node3D" unique_id=1473911055 instance=ExtResource("43_6dvhx")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -31.271, 0.187, 27.673)
+
+[node name="water-tower" parent="Node3D" unique_id=634798981 instance=ExtResource("44_wa4vb")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -26.29, 0.187, 19.241)
+
+[node name="shipping-container-b2" parent="Node3D" unique_id=230570947 instance=ExtResource("34_14fr2")]
+transform = Transform3D(-3.397282, 2.800835e-07, 0, -2.9699981e-07, -3.2037828, 0, 0, 0, 1.6974554, -39.308, 0.187, 34.323)
+
+[node name="bridge-pillar-wide" parent="Node3D" unique_id=866553836 instance=ExtResource("45_6rwum")]
+transform = Transform3D(-2.7481248, 4.3853888e-07, 0, -2.402486e-07, -5.0163035, 0, 0, 0, 5.7313094, -39.956, 0.187, 18.267)
+
+[node name="tree4" parent="Node3D" unique_id=399390466 instance=ExtResource("5_twupq")]
+transform = Transform3D(-3.0089858, 3.1021628e-07, 0, -2.630538e-07, -3.5484622, 0, 0, 0, 3.9876873, -54.732, 0.187, 41.399)
+
+[node name="tree5" parent="Node3D" unique_id=1063917255 instance=ExtResource("5_twupq")]
+transform = Transform3D(-3.107811, 2.2692932e-07, 0, -2.7169347e-07, -2.5957706, 0, 0, 0, 3.159981, -46.9879, -4.10781e-06, 41.491898)
+
+[node name="rocks-high" parent="Node3D" unique_id=1568550399 instance=ExtResource("46_av120")]
+transform = Transform3D(-2.5049145, 9.9661044e-08, 0, -2.1898651e-07, -1.1399901, 0, 0, 0, 2.543985, -51.236313, -0.3722331, 41.644485)
+
+[node name="tree-high2" parent="Node3D" unique_id=1530905255 instance=ExtResource("6_adtit")]
+transform = Transform3D(-1.4257962, 1.0051704e-07, 0, -1.2464702e-07, -1.1497813, 0, 0, 0, 1.7238393, -46.463066, -4.0619284e-06, 43.174667)
+
+[node name="platform2" parent="Node3D" unique_id=691013478 instance=ExtResource("4_yg0hx")]
+transform = Transform3D(-1.9098744, 1.8920122e-07, 0, -1.6696646e-07, -2.1642103, 0, 0, 0, 1.7728269, -44.10131, -3.8554576e-06, 42.836952)
+
+[node name="tree-high3" parent="Node3D" unique_id=1183748370 instance=ExtResource("6_adtit")]
+transform = Transform3D(-2.2498972, 1.3877994e-07, 0, -1.9669216e-07, -1.587458, 0, 0, 0, 1.8529661, -21.112154, -1.8456818e-06, 17.238638)
+
+[node name="tree-high4" parent="Node3D" unique_id=657648679 instance=ExtResource("6_adtit")]
+transform = Transform3D(-1.9666641, 1.2225892e-07, 0, -1.7193123e-07, -1.3984798, 0, 0, 0, 1.7352294, -40.065033, -3.5025955e-06, 43.743275)
+
+[node name="tree-high5" parent="Node3D" unique_id=1911028448 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -39.03658, -3.412686e-06, 41.59064)
+
+[node name="tree-high6" parent="Node3D" unique_id=655372915 instance=ExtResource("6_adtit")]
+transform = Transform3D(-2.0012982, 1.6031935e-07, 0, -1.7495903e-07, -1.8338407, 0, 0, 0, 1.2725866, -35.378147, -3.0928547e-06, 42.1151)
+
+[node name="tree6" parent="Node3D" unique_id=1610614138 instance=ExtResource("5_twupq")]
+transform = Transform3D(-1.7925459, 1.3588273e-07, 0, -1.5670932e-07, -1.5543182, 0, 0, 0, 1.7704643, -36.483974, -3.1895295e-06, 42.75106)
+
+[node name="tree7" parent="Node3D" unique_id=982978588 instance=ExtResource("5_twupq")]
+transform = Transform3D(-1.7590864, 1.6742153e-07, 0, -1.5378419e-07, -1.9150801, 0, 0, 0, 2.0842385, -34.63078, -3.027518e-06, 42.958385)
+
+[node name="tree8" parent="Node3D" unique_id=209446832 instance=ExtResource("5_twupq")]
+transform = Transform3D(-1.699908, 1.6764172e-07, 0, -1.4861062e-07, -1.9175986, 0, 0, 0, 2.1748106, -29.452585, -2.5748259e-06, 42.992046)
+
+[node name="tree-high7" parent="Node3D" unique_id=602211180 instance=ExtResource("6_adtit")]
+transform = Transform3D(-1.9010072, 1.0369779e-07, 0, -1.6619127e-07, -1.1861649, 0, 0, 0, 1.6750323, -28.293663, -2.4735107e-06, 43.071724)
+
+[node name="tree-high8" parent="Node3D" unique_id=301031397 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -28.939276, -2.5299516e-06, 41.780025)
+
+[node name="tree9" parent="Node3D" unique_id=1920370459 instance=ExtResource("5_twupq")]
+transform = Transform3D(-1.9067955, 1.1062402e-07, 0, -1.666973e-07, -1.265392, 0, 0, 0, 2.3118284, -26.649464, -2.3297703e-06, 42.104702)
+
+[node name="tree-high9" parent="Node3D" unique_id=925497029 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -25.898218, -2.2640943e-06, 43.56634)
+
+[node name="tree-high10" parent="Node3D" unique_id=1344880383 instance=ExtResource("6_adtit")]
+transform = Transform3D(-1.6557105, 1.1892968e-07, 0, -1.447468e-07, -1.3603976, 0, 0, 0, 1.2599798, -32.44824, -2.8367142e-06, 42.6244)
+
+[node name="tree10" parent="Node3D" unique_id=2026495786 instance=ExtResource("5_twupq")]
+transform = Transform3D(-1.827647, 1.2025724e-07, 0, -1.5977795e-07, -1.3755834, 0, 0, 0, 2.3300822, -30.812534, -2.6937164e-06, 42.185345)
+
+[node name="tree11" parent="Node3D" unique_id=352835388 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -25.059765, -2.1907945e-06, 41.974773)
+
+[node name="tree12" parent="Node3D" unique_id=2129570486 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -24.3386, -2.127748e-06, 42.76889)
+
+[node name="rocks-low2" parent="Node3D" unique_id=1740183777 instance=ExtResource("9_36ykj")]
+transform = Transform3D(-2.0726652, 1.3776403e-07, 0, -1.8119815e-07, -1.5758374, 0, 0, 0, 0.9999999, -21.670046, -1.8944553e-06, 42.887398)
+
+[node name="tree-small" parent="Node3D" unique_id=794553072 instance=ExtResource("47_6hp1k")]
+transform = Transform3D(-8.084983, 8.0114137e-07, 0, -7.0681165e-07, -9.163994, 0, 0, 0, 6.0461555, -19.674635, -0.013351253, 42.72829)
+
+[node name="tree-large7" parent="Node3D" unique_id=2083789015 instance=ExtResource("28_5tafi")]
+transform = Transform3D(-4.076388, 2.9926673e-07, 0, -3.5636901e-07, -3.4232142, 0, 0, 0, 3.265574, -18.19554, -1.590704e-06, 43.61006)
+
+[node name="tree-high11" parent="Node3D" unique_id=174844223 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -16.880037, -1.4756998e-06, 42.864223)
+
+[node name="tree13" parent="Node3D" unique_id=929457221 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.965568, -1.3957543e-06, 43.631653)
+
+[node name="tree-high12" parent="Node3D" unique_id=295725076 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.698741, -1.3724276e-06, 42.60843)
+
+[node name="tree14" parent="Node3D" unique_id=774562881 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -14.525327, -1.2698445e-06, 43.28668)
+
+[node name="tree15" parent="Node3D" unique_id=732506172 instance=ExtResource("5_twupq")]
+transform = Transform3D(-1.6940581, 1.4809925e-07, 0, -1.4809926e-07, -1.6940583, 0, 0, 0, 1.6940581, -13.610186, -1.1898403e-06, 45.635044)
+
+[node name="tree-high13" parent="Node3D" unique_id=963177345 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -13.283231, -1.1612568e-06, 43.58178)
+
+[node name="tree16" parent="Node3D" unique_id=1090875223 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -12.423144, -1.0860658e-06, 43.658653)
+
+[node name="tree-high14" parent="Node3D" unique_id=1804988704 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -11.329543, -9.9046e-07, 43.238518)
+
+[node name="tree17" parent="Node3D" unique_id=1430491866 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -11.489379, -1.0044334e-06, 44.44464)
+
+[node name="tree-high15" parent="Node3D" unique_id=904950225 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -10.928018, -9.553577e-07, 44.350338)
+
+[node name="tree18" parent="Node3D" unique_id=1485745550 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -9.666106, -8.450378e-07, 44.26049)
+
+[node name="tree-high16" parent="Node3D" unique_id=39032834 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -9.434058, -8.247515e-07, 43.751328)
+
+[node name="tree-high17" parent="Node3D" unique_id=858165243 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -8.780465, -7.676127e-07, 44.62767)
+
+[node name="tree19" parent="Node3D" unique_id=1781835385 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -7.501705, -6.5581986e-07, 44.907784)
+
+[node name="tree20" parent="Node3D" unique_id=1148756332 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -8.076323, -7.060545e-07, 43.693554)
+
+[node name="tree21" parent="Node3D" unique_id=565049289 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -6.7839556, -5.930723e-07, 44.009586)
+
+[node name="tree-high18" parent="Node3D" unique_id=1587423063 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -6.369032, -5.567985e-07, 45.474106)
+
+[node name="tree-high19" parent="Node3D" unique_id=6102852 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -5.728174, -5.0077284e-07, 43.905155)
+
+[node name="tree-high20" parent="Node3D" unique_id=2071119861 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -5.388548, -4.710818e-07, 45.321625)
+
+[node name="tree-high21" parent="Node3D" unique_id=1094869096 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -4.1949944, -3.6673808e-07, 44.94685)
+
+[node name="tree22" parent="Node3D" unique_id=98576211 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -3.5160189, -3.0738016e-07, 44.89457)
+
+[node name="tree-high22" parent="Node3D" unique_id=899254145 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -2.6293128, -2.2986181e-07, 44.88105)
+
+[node name="tree23" parent="Node3D" unique_id=2029431673 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -2.287041, -1.9993946e-07, 45.36334)
+
+[node name="tree-high23" parent="Node3D" unique_id=1919574131 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.3504611, -1.18061045e-07, 44.60717)
+
+[node name="tree-high24" parent="Node3D" unique_id=583139859 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -1.1482106, -1.0037976e-07, 45.83475)
+
+[node name="tree24" parent="Node3D" unique_id=1512812169 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -0.27758095, -2.4266896e-08, 44.688057)
+
+[node name="tree-high25" parent="Node3D" unique_id=1438228780 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 0.0387094, 4.802212e-07, 45.889698)
+
+[node name="tree-high26" parent="Node3D" unique_id=2107564695 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 0.95686495, 8.3651784e-08, 45.795624)
+
+[node name="tree25" parent="Node3D" unique_id=1216851942 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, 2.2865798, 1.9989915e-07, 45.288063)
+
+[node name="tree26" parent="Node3D" unique_id=1783238894 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -38.28849, -3.3472859e-06, 43.02573)
+
+[node name="tree27" parent="Node3D" unique_id=133139444 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -42.02149, -5.580984e-06, 43.67048)
+
+[node name="tree28" parent="Node3D" unique_id=1067364568 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -23.171272, -3.9330453e-06, 43.186573)
+
+[node name="TreeLarge" type="MeshInstance3D" parent="Node3D" unique_id=651384755]
+transform = Transform3D(-1.8883772, 1.3198454e-07, 0, -1.6508716e-07, -1.5097275, 0, 0, 0, 0.9999999, -42.721634, -3.7348432e-06, 43.330917)
+mesh = ExtResource("48_jr4ty")
+
+[node name="road-slant" parent="Node3D" unique_id=878976786 instance=ExtResource("49_2p4it")]
+transform = Transform3D(2.8967328, 1.9216294e-07, -1.8758226e-07, 2.5324024e-07, -2.198088, 1.6940659e-21, -2.5324044e-07, -1.6799418e-14, -2.145691, -34.374, 0.17625543, 15.989)
+
+[node name="road-slant2" parent="Node3D" unique_id=1833763180 instance=ExtResource("49_2p4it")]
+transform = Transform3D(-3.1561677, 2.0217352e-07, 0, -2.7592077e-07, -2.3125987, 0, 0, 0, 2.1623857, -27.42821, 0.19292152, 15.926565)
+
+[node name="road-straight-half3" parent="Node3D" unique_id=828278315 instance=ExtResource("41_o5x6y")]
+transform = Transform3D(-8.00165, 1.6864821e-07, 0, -6.995263e-07, -1.9291148, 0, 0, 0, 2.1140003, -30.972641, -0.37787876, 15.937239)
+
+[node name="road-curve-intersection2" parent="Node3D" unique_id=996261987 instance=ExtResource("39_darl0")]
+transform = Transform3D(1.3200424, 8.198434e-08, -1.8925508e-07, 1.1540164e-07, -0.9377929, 1.6940659e-20, -1.1540177e-07, -7.167309e-15, -2.1648257, -24.56075, 0.19167526, 14.860912)
+
+[node name="road-straight-half4" parent="Node3D" unique_id=779499734 instance=ExtResource("41_o5x6y")]
+transform = Transform3D(3.182662e-07, -6.3948846e-14, 1.3006797, 6.365323e-07, -1.0000006, -7.1054274e-14, 7.281081, 8.7422826e-08, -5.685451e-08, -23.900871, 0.18700027, 11.1128025)
+
+[node name="road-straight-half5" parent="Node3D" unique_id=1275934662 instance=ExtResource("41_o5x6y")]
+transform = Transform3D(-4.8647118, 5.5831677e-08, 0, -4.2528583e-07, -0.6386413, 0, 0, 0, 2.1282942, -22.052877, 0.16128181, 15.922294)
+
+[node name="RoadEndRound" type="MeshInstance3D" parent="Node3D" unique_id=535767424]
+transform = Transform3D(-1.9157584, 8.742269e-08, 0, -1.6748078e-07, -1, 0, 0, 0, 2.1740174, -20.318, 0.187, 15.927)
+mesh = ExtResource("50_guv61")
+
+[node name="tree-high27" parent="Node3D" unique_id=1998871809 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -20.283571, -1.7732459e-06, 17.095919)
+
+[node name="tree-high28" parent="Node3D" unique_id=559687919 instance=ExtResource("6_adtit")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -19.77318, -1.9670447e-06, 16.868265)
+
+[node name="tree29" parent="Node3D" unique_id=1666562619 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -19.13706, -1.6730148e-06, 15.911652)
+
+[node name="tree30" parent="Node3D" unique_id=129621975 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -19.190945, -1.6777255e-06, 14.993559)
+
+[node name="tree31" parent="Node3D" unique_id=61531173 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -20.8991, -1.8270572e-06, 14.109541)
+
+[node name="tree32" parent="Node3D" unique_id=39262222 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -21.828466, -1.9083052e-06, 14.0575075)
+
+[node name="tree33" parent="Node3D" unique_id=1131067073 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -22.191694, -1.9400593e-06, 17.433304)
+
+[node name="tree34" parent="Node3D" unique_id=727859322 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -23.369223, -2.043002e-06, 17.468079)
+
+[node name="tree35" parent="Node3D" unique_id=754257530 instance=ExtResource("5_twupq")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -15.882805, -1.388519e-06, 26.38232)
+
+[node name="building-o" parent="Node3D" unique_id=379217589 instance=ExtResource("51_r1q1n")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -18.604286, -1.1496011e-06, 27.364044)
+
+[node name="building-q2" parent="Node3D" unique_id=2015291518 instance=ExtResource("13_mu7xm")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -20.851585, -1.3460663e-06, 27.989372)
+
+[node name="building-s2" parent="Node3D" unique_id=831112919 instance=ExtResource("15_ilidf")]
+transform = Transform3D(-0.9999999, 8.742272e-08, 0, -8.742273e-08, -1, 0, 0, 0, 0.9999999, -27.882746, -0.15556961, 27.692066)
+
+[node name="building-s3" parent="Node3D" unique_id=70236139 instance=ExtResource("15_ilidf")]
+transform = Transform3D(-0.9999999, 8.742275e-08, 0, -8.7422755e-08, -1, 0, 0, 0, 0.9999999, -8.145819, -7.1213e-07, 27.33658)
+
+[node name="building-n" parent="Node3D" unique_id=1688724043 instance=ExtResource("52_4s6k1")]
+transform = Transform3D(4.3711385e-08, -7.1054274e-15, 0.9999999, 8.742277e-08, -1, -1.4210855e-14, 0.9999999, 8.742278e-08, -4.3711385e-08, -5.1504765, -4.502689e-07, 27.901056)
+
+[node name="building-s4" parent="Node3D" unique_id=1218748940 instance=ExtResource("15_ilidf")]
+transform = Transform3D(4.3711385e-08, -7.1054274e-15, -0.9999999, 8.742277e-08, -1, 1.4210855e-14, -0.9999999, -8.742278e-08, -4.3711385e-08, -39.947544, -0.17314497, 14.690251)
+
+[node name="building-s5" parent="Node3D" unique_id=1591866623 instance=ExtResource("15_ilidf")]
+transform = Transform3D(4.3711385e-08, -7.1054274e-15, -0.9999999, 8.742277e-08, -1, 1.4210855e-14, -0.9999999, -8.742278e-08, -4.3711385e-08, -39.95072, -3.4926027e-06, 12.259927)
+
+[node name="building-n2" parent="Node3D" unique_id=254243852 instance=ExtResource("52_4s6k1")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -43.9953, -3.846191e-06, 33.44447)
+
+[node name="building-i3" parent="Node3D" unique_id=217301086 instance=ExtResource("30_o12j6")]
+transform = Transform3D(-0.9999999, 8.7422755e-08, 0, -8.742276e-08, -1, 0, 0, 0, 0.9999999, -47.364483, -4.1407347e-06, 33.898434)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Node3D" unique_id=189822099]
+environment = SubResource("Environment_twupq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Node3D" unique_id=76503945]
+transform = Transform3D(-0.17253786, -0.8742411, -0.45379826, 0.63926125, -0.44988787, 0.6236554, -0.74938357, -0.18249148, 0.6364911, -5.525323, 6.451697, 0.39151752)
+light_color = Color(1, 0.9411765, 0.83137256, 1)
+light_energy = 1.17
+light_specular = 0.0
+shadow_enabled = true
+shadow_bias = 0.287
+shadow_blur = 0.562
+sky_mode = 1
+
+[editable path="Voiture"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cg02d3sy4g66n"
+path="res://.godot/imported/Aless-I kissed a girlmusique.wav-625a97870ca6b00f4a5c1b7e7b472a80.sample"
+
+[deps]
+
+source_file="res://music/Aless-I kissed a girlmusique.wav"
+dest_files=["res://.godot/imported/Aless-I kissed a girlmusique.wav-625a97870ca6b00f4a5c1b7e7b472a80.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ckdnl6ge7iud8"
+path="res://.godot/imported/Call me maybe music coupé.wav-3480b11b980a614c01d33a905052924d.sample"
+
+[deps]
+
+source_file="res://music/Call me maybe music coupé.wav"
+dest_files=["res://.godot/imported/Call me maybe music coupé.wav-3480b11b980a614c01d33a905052924d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
